@@ -1,0 +1,1287 @@
+<?Mind Space Document XML format UTF-8?>
+<comment>
+</comment>
+<PNLbank>
+<PNL serial=1>
+<TAG>A</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>24 25</LINK>
+</PNL>
+<PNL serial=2>
+<TAG>Appendix Explorer</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>20</LINK>
+</PNL>
+<PNL serial=3>
+<TAG>B</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>24</LINK>
+</PNL>
+<PNL serial=4>
+<TAG>C</TAG>
+<APP>[cts|20110301][mts|20110301][tip|this is an example of CV.syntax]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=5>
+<TAG>C++ STL</TAG>
+<APP>[cts|Sun Jan 10 11:54:31 2016]</APP>
+<LINK>56 57 58 59 64 65</LINK>
+</PNL>
+<PNL serial=6>
+<TAG>CV</TAG>
+<APP>[acronym|concept visualizer][author|Wicknec][cts|20110301][description|C# realization of mspace explorer][mts|20110301]</APP>
+<LINK>14 15 21 22</LINK>
+</PNL>
+<PNL serial=7>
+<TAG>CV.syntax</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>21 25 26 31</LINK>
+</PNL>
+<PNL serial=8>
+<TAG>CVURL</TAG>
+<APP>[!|import os\r\nK in globals()\r\nif args.startswith(\phttp\p):\r\n    K.GetApp(\pwebbrowser\p)(\p!get\p,args)\r\nelse:\r\n    print(\popenning %s\p% args)\r\n    os.system(\p\q%s\q\p% args)][!find|#find nodes with CVURL property\r\n][cts|Tue Dec 29 17:15:39 2015]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=9>
+<TAG>China Film Cinema</TAG>
+<APP>[CVURL|http:\s\swww.cfc.com.cn\ssearch\sschedule.aspx][cts|Fri Jan 15 07:41:40 2016]</APP>
+<LINK>69</LINK>
+</PNL>
+<PNL serial=10>
+<TAG>Conceiver</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>15 17 18 19 20 30</LINK>
+</PNL>
+<PNL serial=11>
+<TAG>Concept Picker</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>17</LINK>
+</PNL>
+<PNL serial=12>
+<TAG>Console</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>19 23</LINK>
+</PNL>
+<PNL serial=13>
+<TAG>Container</TAG>
+<APP>[cts|20110228]</APP>
+<LINK>1 6</LINK>
+</PNL>
+<PNL serial=14>
+<TAG>Datagram</TAG>
+<APP>[cts|20110301][mts|20110301]</APP>
+<LINK>3 4 5 6 11 13</LINK>
+</PNL>
+<PNL serial=15>
+<TAG>FastStone</TAG>
+<APP>[!run|import os\r\nos.system(\p\qD:\\Green Program Files\\FSCapture\\FSCapture.exe\q\p)][CVURL|D:\\Green Program Files\\FSCapture\\FSCapture.exe][cts|Sat Dec 26 12:44:50 2015]</APP>
+<LINK>41</LINK>
+</PNL>
+<PNL serial=16>
+<TAG>GoOnXueShu</TAG>
+<APP>[cts|Fri Dec 18 10:37:36 2015][element|[advsearch|\s\s*[@id=\qfm\q]\sdiv[1]\sspan][allword|\s\s*[@id=\qsc_adv_frm\q]\sdiv[1]\sspan[2]\sinput][bdsearchbutton|su][bdsearchinput|kw][mySubs|\s\s*[@id=\qmsg_r_content\q]\sdiv[2]\sp\sspan[2]][search|\s\s*[@id=\qsc_adv_frm\q]\sspan[2]\sinput]][pos|[advsearch|(1131,286)][allword|(938,332)][bdsearch|(788,288)][emuchCoin|(1011,452)][mySubs|(327,217)][winclose|(1898,11)][windowup|(1172,15)]][query|import sys\r\nprint(\p\\n?\p)\r\nq=sys.stdin.readline().rstrip()\r\nwhile q!=\pquit\p:\r\n    try:\r\n        print(eval(q))\r\n    except Exception as e:\r\n        import traceback\r\n        traceback.print_exc()\r\n    print(\p\\n?\p)\r\n    q=sys.stdin.readline().rstrip()][task|[1|from selenium import webdriver\r\no=webdriver.ChromeOptions()\r\no.add_argument(\puser-data-dir=C:\sUsers\sH2O\sAppData\sLocal\sGoogle\sChrome\sUser Data\p)\r\nM[\pwd\p]=webdriver.Chrome(chrome_options=o)][2|M[\pelement\p]=K.GetApp(\pGoOnXueShu\p)[\pelement\p]][3|M[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\p)][4|M[\pwd\p].find_element_by_xpath(M[\pelement\p][\padvsearch\p]).click()][5|M[\pwd\p].find_element_by_xpath(M[\pelement\p][\pallword\p]).send_keys(\pCNT photonic\p)][6|M[\pwd\p].find_element_by_xpath(M[\pelement\p][\psearch\p]).click()][7|M[\pwd\p].execute_script(\pwindow.open(\qhttp:\s\sxueshu.baidu.com\su\spaperhelp\q)\p)][8|M[\pwd\p].switch_to.window(M[\pwd\p].window_handles[1])][9|M[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\susercenter?tab=collect\p)][10|M[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\susercenter\p)][11|M[\pwd\p].find_element_by_xpath(M[\pelement\p][\pmySubs\p]).click()][12|M[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\p)][13|M[\pwd\p].find_element_by_id(\pkw\p).send_keys(u\pair\p)][14|M[\pwd\p].find_element_by_id(M[\pelement\p][\pbdsearchbutton\p]).click()][15|M[\pwd\p].execute_script(\pwindow.open(\qhttp:\s\semuch.net\sbbs\q)\p)][16|M[\pwd\p].switch_to.window(M[\pwd\p].window_handles[2])][17|time.sleep(1)\r\nM[\pwd\p].find_element_by_partial_link_text(\p红包\p).click()][18|M[\pwd\p].switch_to.window(M[\pwd\p].window_handles[2])][19|M[\pwd\p].find_element_by_name(\pcreditsubmit\p).click()][20|M[\pmaop\p].Appoint(K.GetApp(\preplenish daily task\p))][c1|M[\pso\p].SetCursorPos(eval(M[\ppos\p][\pbdsearch\p]))\r\nM[\pso\p].MouseClick()][c2|M[\pso\p].SetCursorPos(eval(M[\ppos\p][\padvsearch\p]))\r\nM[\pso\p].MouseClick()][c3|M[\pso\p].SetCursorPos(eval(M[\ppos\p][\pallword\p]))\r\nM[\pso\p].MouseClick()][c4|M[\pso\p].Str2clipboard(\pCNT photonic\p)][c5|M[\pso\p].KeyboardComb(\pctrl v\p)][c6|M[\pso\p].KeyboardComb(\penter\p)][c7|M[\pso\p].SetCursorPos(eval(M[\ppos\p][\pmySubs\p]))\r\nM[\pso\p].MouseClick()]][trigger|time.localtime().tm_hour==7]</APP>
+<LINK>0</LINK>
+</PNL>
+<PNL serial=17>
+<TAG>InfographX</TAG>
+<APP>[cts|20110228]</APP>
+<LINK>2 14 16</LINK>
+</PNL>
+<PNL serial=18>
+<TAG>InfographX GUI components</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>2 3 7 8</LINK>
+</PNL>
+<PNL serial=19>
+<TAG>InfographX utilities</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>16</LINK>
+</PNL>
+<PNL serial=20>
+<TAG>MScore</TAG>
+<APP>[abbreviation|mind space core program][author|Wicknec][cts|20110301][mts|20110301][purpose|for managing MScore database]</APP>
+<LINK>22 23 27</LINK>
+</PNL>
+<PNL serial=21>
+<TAG>MScore database</TAG>
+<APP>[cts|20110301][mts|20110301][purpose|for accumulating ideas. Different graphs can be parts of the same MScore database]</APP>
+<LINK>27</LINK>
+</PNL>
+<PNL serial=22>
+<TAG>Manipulator</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>18</LINK>
+</PNL>
+<PNL serial=23>
+<TAG>Maya</TAG>
+<APP>[cts|Thu Jan  7 16:33:41 2016][setParentProblem|$exists=0;\r\n for ($item in `getPanel -scriptType \qrenderWindowPanel\q`) {\r\n        if ( $item == \qrenderView\q ) {\r\n                print \qrenderView exists.\\n\q;\r\n                $exists=1;\r\n        }\r\n }\r\n if ( $exists == 0 ) {\r\n        for ($item in `getPanel -scriptType \qrenderWindowPanel\q`) {\r\n                \s\sprint ( $item + \q\\n\q);\r\n                if ( $item == \qrenderWindowPanel1\q ) {\r\n                deleteUI renderWindowPanel1;\r\n                $renderPanel = `scriptedPanel -type \qrenderWindowPanel\q -unParent renderView`;\r\n                scriptedPanel -e -label `interToUI $renderPanel` $renderPanel;\r\n                }\r\n        }\r\n }]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=24>
+<TAG>ProxySelectedContainer</TAG>
+<APP>[cts|20110228][mts|20110301][u|todo][unimplemented]</APP>
+<LINK>1</LINK>
+</PNL>
+<PNL serial=25>
+<TAG>PyQt4</TAG>
+<APP>[cts|Mon Jan  4 09:39:24 2016]</APP>
+<LINK>49 50</LINK>
+</PNL>
+<PNL serial=26>
+<TAG>QGraphicsView</TAG>
+<APP>[cts|Tue Jan 19 08:18:31 2016]</APP>
+<LINK>73</LINK>
+</PNL>
+<PNL serial=27>
+<TAG>QMessageBox</TAG>
+<APP>[!test|from PyQt4 import QtGui\r\nr=QtGui.QMessageBox.question(None,\pQuestion\p,\pAsk\p,\pYes\p,\pNo\p)\r\nprint(\pthe return is %s\p%r)][cts|Mon Jan  4 09:32:56 2016]</APP>
+<LINK>48</LINK>
+</PNL>
+<PNL serial=28>
+<TAG>QPlainTextEdit</TAG>
+<APP>[cts|Thu Jan 14 11:55:57 2016][memo|.setPlainText(\p123\p)\r\n]</APP>
+<LINK>67</LINK>
+</PNL>
+<PNL serial=29>
+<TAG>QtGui</TAG>
+<APP>[!init|if \pmodules\p not in M:\r\n    M[\pmodules\p]=dict()\r\nif \pQtGui\p not in M[\pmodules\p]:\r\n    from PyQt4 import QtGui\r\n    M[\pmodules\p][\pQtGui\p]=QtGui][cts|Mon Jan  4 09:32:36 2016]</APP>
+<LINK>48 50 67 73</LINK>
+</PNL>
+<PNL serial=30>
+<TAG>StringIO</TAG>
+<APP>[cts|Thu Feb  4 10:29:08 2016][description|A package in python 2.x\r\nintegrated to io in python 3.x]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=31>
+<TAG>StyleRenderer</TAG>
+<APP>[cts|20110301][mts|20110301][not fully implemented]</APP>
+<LINK>30</LINK>
+</PNL>
+<PNL serial=32>
+<TAG>WalArt</TAG>
+<APP>[description|Walnut Artifacts\r\nA package written by wic]</APP>
+<LINK>74 75 76</LINK>
+</PNL>
+<PNL serial=33>
+<TAG>WeChat web</TAG>
+<APP>[CVURL|https:\s\swx.qq.com][cts|Fri Dec 25 08:02:57 2015][elements|[chatContact|xpath,\s\s*[@id=\qJ_NavChatScrollBody\q]\sdiv][editArea|id,editArea][send|class,btn_send]]</APP>
+<LINK>36</LINK>
+</PNL>
+<PNL serial=34>
+<TAG>algorithm</TAG>
+<APP>[cts|Wed Jan 13 18:03:39 2016]</APP>
+<LINK>66 71</LINK>
+</PNL>
+<PNL serial=35>
+<TAG>alibExp</TAG>
+<APP>[cts|Tue Jan 19 08:38:50 2016][description|A python module\r\nA python class\r\nA graphic interface][memo|.GetCurrent()\r\n\r\n.GetSelectedText()]</APP>
+<LINK>75 77</LINK>
+</PNL>
+<PNL serial=36>
+<TAG>application</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=37>
+<TAG>application web interface</TAG>
+<APP>[cts|Fri Dec 25 08:03:42 2015][description|For web access by maop]</APP>
+<LINK>36 37</LINK>
+</PNL>
+<PNL serial=38>
+<TAG>attribute</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>31</LINK>
+</PNL>
+<PNL serial=39>
+<TAG>baidu</TAG>
+<APP>[cts|Fri Dec 18 15:19:55 2015]</APP>
+<LINK>0 33 34</LINK>
+</PNL>
+<PNL serial=40>
+<TAG>baidu xueshu paperhelp</TAG>
+<APP>[!go|[1|exec(K.GetApp(\pselenium web driver\p)[\p!init\p])][2|k=K.nodes[\pbaidu xueshu paperhelp\p].app[\pCVURL\p]\r\nprint(k)\r\nM[\pwd\p].get(k)][3|exec(K.GetApp(\pbaidu xueshu paperhelp\p)[\pelement\p][\pgongguan\p])][4|#init matching\r\nimport re\r\nM[\pre\p]=re.compile(\pwiley|jstor|ieee|springer|nature\p)\r\nM[\pmaop\p].Appoint(K.GetApp(\pbaidu xueshu paperhelp\p)[\p!loop\p])]][!loop|[1|#navigate to next page\r\nM[\pwd\p].find_element_by_class_name(\pc-icon-page-next\p).click()][2|#see if the items match\r\nans=M[\pwd\p].find_element_by_class_name(\pres-page-number-now\p)\r\nprint(ans.text)\r\nans=M[\pwd\p].find_elements_by_class_name(\pres-intro\p)\r\nwait=False\r\nfor i in ans:\r\n    if M[\pre\p].search(i.text):\r\n        print(i.text)\r\n        wait=True\r\nif not wait:\r\n    M[\pmaop\p].Appoint(K.GetApp(\pbaidu xueshu paperhelp\p)[\p!loop\p])]][!nextpage|M[\pwd\p].find_element_by_class_name(\pc-icon-page-next\p).click()][#class|web page][CVURL|http:\s\sxueshu.baidu.com\su\spaperhelp][cts|Thu Dec 31 19:58:40 2015][element|[gongguan|#click\r\nM[\pwd\p].find_element_by_xpath(\p\s\s*[@id=\qlobby-left-container\q]\sdiv[2]\sul\sli[2]\p).click()][res-intro|ans=M[\pwd\p].find_elements_by_class_name(\pres-intro\p)\r\nM[\pt\p]=ans[0]]]</APP>
+<LINK>46</LINK>
+</PNL>
+<PNL serial=41>
+<TAG>baidu xueshu result page</TAG>
+<APP>[cts|Tue Jan  5 07:27:34 2016][element|[input|ans=M[\pwd\p].find_element_by_id(\pkw\p)\r\nM[\pans\p]=ans][nums|ans=M[\pwd\p].find_element_by_class_name(\pnums\p)\r\nprint(ans.text)][search|M[\pwd\p].find_element_by_class_name(\ps_btn\p).click()]]</APP>
+<LINK>51</LINK>
+</PNL>
+<PNL serial=42>
+<TAG>binary search tree</TAG>
+<APP>[cts|Wed Jan 13 17:34:43 2016][description|A tree whose values of left tree all less than root node, which is still less than right tree nodes. And whose left and right tree are also BSTs.]</APP>
+<LINK>66</LINK>
+</PNL>
+<PNL serial=43>
+<TAG>call</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=44>
+<TAG>component</TAG>
+<APP>[cts|20110301][description|A part of a system]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=45>
+<TAG>concept</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=46>
+<TAG>consistency</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>26 28 29</LINK>
+</PNL>
+<PNL serial=47>
+<TAG>cpp algorithm</TAG>
+<APP>[cts|Sun Jan 10 11:59:00 2016][memo|#include&lt;algorithm&gt;\r\nsort(vec.begin(),vec.end());(默认是按升序排列,即从小到大).\r\nreverse(vec.begin(),vec.end());将元素翻转(在vector中，如果一个函数中需要两个迭代器，\r\n\r\n一般后一个都不包含.)]</APP>
+<LINK>57</LINK>
+</PNL>
+<PNL serial=48>
+<TAG>cpp hashtable</TAG>
+<APP>[cts|Tue Jan 12 18:58:04 2016][memo|unordered_set&lt;int&gt; h;\r\nhash.insert(1);\r\nhash.find(1) != hasn.end()\r\n][mts|Tue Jan 12 20:17:42 2016]</APP>
+<LINK>64</LINK>
+</PNL>
+<PNL serial=49>
+<TAG>cpp map</TAG>
+<APP>[cts|Tue Jan 12 20:22:53 2016][memo|map&lt;int,string&gt; m;\r\nm[1]=\q1\q;\s\sslow\r\nm.insert(map&lt;int,string&gt;::value_type(2,\q2\q)\s\sfast\r\nm.find(1) != m.end()\s\strue if found\r\nm.erase(1);]</APP>
+<LINK>65</LINK>
+</PNL>
+<PNL serial=50>
+<TAG>cpp stack</TAG>
+<APP>[memo|stack&lt;int&gt; s;\r\ns.push(1);\r\na=s.top();\r\ns.pop();\r\ns.empty();]</APP>
+<LINK>58</LINK>
+</PNL>
+<PNL serial=51>
+<TAG>cpp string</TAG>
+<APP>[cts|Tue Jan 12 14:24:03 2016][memo|string s;\r\nint size()\r\nint length()\r\nbool empty()\r\ns+=\q123\q;\r\ns==\q123\q]</APP>
+<LINK>59</LINK>
+</PNL>
+<PNL serial=52>
+<TAG>cpp vector</TAG>
+<APP>[cts|Sun Jan 10 11:54:57 2016][memo|#include&lt;vector&gt;\r\nvector&lt;int&gt; v;\r\nv.push_back(1);\r\nv[0];\r\nvector&lt;int&gt;::iterator it;\r\nfor(it=vec.begin();it!=vec.end();it++)...\r\nvec.insert(vec.begin()+i,a);\r\nvec.erase(vec.begin()+2);\r\nv.erase(1,3);\r\nv.size();\r\nv.clear();]</APP>
+<LINK>56</LINK>
+</PNL>
+<PNL serial=53>
+<TAG>creation</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=54>
+<TAG>deletion</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=55>
+<TAG>douban</TAG>
+<APP>[cts|Tue Jan 19 17:05:15 2016][pass|douban----][username|wwnn31@hotmail.com]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=56>
+<TAG>double click</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=57>
+<TAG>drag</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=58>
+<TAG>eetop</TAG>
+<APP>[CVURL|http:\s\swww.eetop.cn\s][cts|Tue Jan 19 10:12:43 2016]</APP>
+<LINK>80</LINK>
+</PNL>
+<PNL serial=59>
+<TAG>elecfans</TAG>
+<APP>[CVURL|http:\s\swww.elecfans.com\s][cts|Tue Jan 19 10:09:17 2016][pass|elecfans----][username|wicknec]</APP>
+<LINK>78</LINK>
+</PNL>
+<PNL serial=60>
+<TAG>emuch</TAG>
+<APP>[cts|Tue Jan 19 10:11:24 2016]</APP>
+<LINK>79</LINK>
+</PNL>
+<PNL serial=61>
+<TAG>example</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=62>
+<TAG>extension</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=63>
+<TAG>fanyi.baidu.com</TAG>
+<APP>[CVURL|http:\s\sfanyi.baidu.com][class|webpage][cts|Wed Dec 23 15:42:36 2015][elements|[input|id=\pbaidu_translate_input\p][output|class=\poutput-bd\p]][trigger]</APP>
+<LINK>33</LINK>
+</PNL>
+<PNL serial=64>
+<TAG>github</TAG>
+<APP>[CVURL|https:\s\sgithub.com\spypa\spip][class|login page][cts|Tue Feb  2 11:48:52 2016][description|An online repository site][help|[CVURL|https:\s\sguides.github.com\sactivities\shello-world\s]][pass|github----][user|wicknec]</APP>
+<LINK>82</LINK>
+</PNL>
+<PNL serial=65>
+<TAG>greek alphabet</TAG>
+<APP>[cts|Tue Jan 12 15:52:10 2016]</APP>
+<LINK>62 63</LINK>
+</PNL>
+<PNL serial=66>
+<TAG>its.pku.edu.cn</TAG>
+<APP>[!login|[1|#selenium init][2|#login via url]][cts|Tue Jan 19 08:05:14 2016][description|login page of pku cernet]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=67>
+<TAG>keyPress</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=68>
+<TAG>lambda</TAG>
+<APP>[cts|Tue Jan 12 15:51:42 2016][description|λ]</APP>
+<LINK>63</LINK>
+</PNL>
+<PNL serial=69>
+<TAG>linear-time sorting</TAG>
+<APP>[cts|Mon Jan 18 13:13:25 2016][description|counting sort\r\nradix sort\r\nbucket sort]</APP>
+<LINK>72</LINK>
+</PNL>
+<PNL serial=70>
+<TAG>link</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>4 12</LINK>
+</PNL>
+<PNL serial=71>
+<TAG>link.consistency</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>29</LINK>
+</PNL>
+<PNL serial=72>
+<TAG>login page</TAG>
+<APP>[cts|Wed Jan  6 13:36:54 2016][description|a web page that contains login controls]</APP>
+<LINK>54</LINK>
+</PNL>
+<PNL serial=73>
+<TAG>maop</TAG>
+<APP>[!desk|M[\pmaop\p].busyWerk=False][!init|#the startup action for loading\r\nprint(\pStarted at %s\p%time.clock())\r\nM[\pmaop\p].Appoint(K.GetApp(\pGoOnXueShu\p))][cts|Tue Dec 22 17:21:26 2015][description|Minion-Automated Operating Program, aims to be a good helper, extending computer ability for better life\r\nA python module\r\nA python class\r\nA graphic interface]</APP>
+<LINK>32 52 76</LINK>
+</PNL>
+<PNL serial=74>
+<TAG>math module</TAG>
+<APP>[!init|if \pmodules\p not in M:\r\n    M[\pmodules\p]=dict()\r\nif \pmath\p not in M[\pmodules\p]:\r\n    import math\r\n    M[\pmodules\p][\pmath\p]=math\r\n][cts|Wed Dec 30 15:16:51 2015]</APP>
+<LINK>45</LINK>
+</PNL>
+<PNL serial=75>
+<TAG>matplotlib</TAG>
+<APP>[!demo|import numpy as np\r\nimport matplotlib.pyplot as plt\r\n \r\nN = 5\r\nmenMeans = (20, 35, 30, 35, 27)\r\nmenStd =   (2, 3, 4, 1, 2)\r\n \r\nind = np.arange(N)  # the x locations for the groups\r\nwidth = 0.35       # the width of the bars\r\n \r\nfig, ax = plt.subplots()\r\nrects1 = ax.bar(ind, menMeans, width, color=\pr\p, yerr=menStd)\r\n \r\nwomenMeans = (25, 32, 34, 20, 25)\r\nwomenStd =   (3, 5, 2, 3, 3)\r\nrects2 = ax.bar(ind+width, womenMeans, width, color=\py\p, yerr=womenStd)\r\n \r\n# add some\r\nax.set_ylabel(\pScores\p)\r\nax.set_title(\pScores by group and gender\p)\r\nax.set_xticks(ind+width)\r\nax.set_xticklabels( (\pG1\p, \pG2\p, \pG3\p, \pG4\p, \pG5\p) )\r\n \r\nax.legend( (rects1[0], rects2[0]), (\pMen\p, \pWomen\p) )\r\n \r\ndef autolabel(rects):\r\n    # attach some text labels\r\n    for rect in rects:\r\n        height = rect.get_height()\r\n        ax.text(rect.get_x()+rect.get_width()\s2., 1.05*height, \p%d\p%int(height),\r\n                ha=\pcenter\p, va=\pbottom\p)\r\n \r\nautolabel(rects1)\r\nautolabel(rects2)\r\n \r\nplt.show()][CVURL|http:\s\smatplotlib.org\sapi\ssankey_api.html][cts|Wed Jan  6 13:17:54 2016][description|implements matlab functions in python]</APP>
+<LINK>53 60</LINK>
+</PNL>
+<PNL serial=76>
+<TAG>member</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=77>
+<TAG>minKnow.msdx</TAG>
+<APP>[cts|Wed Jan 13 18:17:39 2016][description|The manifestable part of wic]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=78>
+<TAG>module</TAG>
+<APP>[cts|Tue Jan 19 08:35:04 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=79>
+<TAG>mspaceExp</TAG>
+<APP>[cts|Tue Jan  5 11:01:29 2016][description|A python module\r\nA python class\r\nA graphic interface][memo|.LoadNodes([\pa\p,\pb\p])\r\n#add entries to node list\r\n.thisLink()\r\n\r\n.thisNode()\r\n\r\n]</APP>
+<LINK>52 74 77</LINK>
+</PNL>
+<PNL serial=80>
+<TAG>mu</TAG>
+<APP>[cts|Wed Feb  3 09:24:55 2016][description|μ]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=81>
+<TAG>new link</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>12 13</LINK>
+</PNL>
+<PNL serial=82>
+<TAG>new note</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>10 11</LINK>
+</PNL>
+<PNL serial=83>
+<TAG>node</TAG>
+<APP>[!search|#search unconnected nodes\r\nl=[]\r\nfor n in K.nodes.values():\r\n    if len(n.links)==0:\r\n        l.append(n)\r\nM[\pmaop\p].mspaceExp.LoadNodes(l)][cts|Tue Jan  5 08:04:20 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=84>
+<TAG>note</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>5 10</LINK>
+</PNL>
+<PNL serial=85>
+<TAG>note.consistency</TAG>
+<APP>[cts|20110301][illegal characters|a consistent node can\pt contain these characters in its text: \\n \\t \\r.][mts|20110301]</APP>
+<LINK>28</LINK>
+</PNL>
+<PNL serial=86>
+<TAG>numpy</TAG>
+<APP>[cts|Tue Jan 12 14:49:01 2016][description|Let python deal with numbers like matlab]</APP>
+<LINK>61</LINK>
+</PNL>
+<PNL serial=87>
+<TAG>omega</TAG>
+<APP>[cts|Tue Jan  5 15:25:32 2016][description|Ω]</APP>
+<LINK>62</LINK>
+</PNL>
+<PNL serial=88>
+<TAG>os module</TAG>
+<APP>[cts|Sat Dec 26 12:50:42 2015]</APP>
+<LINK>42</LINK>
+</PNL>
+<PNL serial=89>
+<TAG>overView</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>7</LINK>
+</PNL>
+<PNL serial=90>
+<TAG>package</TAG>
+<APP>[cts|Tue Jan 12 14:47:22 2016][description|Software package\r\nLike libraries]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=91>
+<TAG>parallel</TAG>
+<APP>[cts|Wed Jan  6 17:29:18 2016][symbol|∥]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=92>
+<TAG>part</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=93>
+<TAG>perpendicular</TAG>
+<APP>[cts|Wed Jan  6 17:27:57 2016][symbol|⊥]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=94>
+<TAG>pi</TAG>
+<APP>[cts|Wed Feb  3 14:59:22 2016][description|Ππ]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=95>
+<TAG>pip</TAG>
+<APP>[CVURL|https:\s\spypi.python.org\spypi\spip][cts|Tue Feb  2 11:50:05 2016][description|Pip is a modern, general purpose installation tool for python packages.]</APP>
+<LINK>81 82</LINK>
+</PNL>
+<PNL serial=96>
+<TAG>propertyGrids</TAG>
+<APP>[cts|20110301]</APP>
+<LINK>8 9</LINK>
+</PNL>
+<PNL serial=97>
+<TAG>proxy</TAG>
+<APP>[cts|20110228]</APP>
+<LINK>9</LINK>
+</PNL>
+<PNL serial=98>
+<TAG>pyplot</TAG>
+<APP>[cts|Tue Jan 12 14:47:15 2016]</APP>
+<LINK>60</LINK>
+</PNL>
+<PNL serial=99>
+<TAG>python</TAG>
+<APP>[cts|Tue Dec 22 17:45:45 2015][description|A very convenient language]</APP>
+<LINK>32 38 81</LINK>
+</PNL>
+<PNL serial=100>
+<TAG>python module</TAG>
+<APP>[cts|Sat Dec 26 09:28:57 2015][memo|if \pmodules\p not in M:\r\n    M[\pmodules\p]=dict()\r\nif \pmath\p not in M[\pmodules\p]:\r\n    import math\r\n    M[\pmodules\p][\pmath\p]=math]</APP>
+<LINK>38 39 40 42 43 44 45 47 49 53 61 70</LINK>
+</PNL>
+<PNL serial=101>
+<TAG>random module</TAG>
+<APP>[!init|import random\r\nM[\prand\p]=random\r\nprint(M[\prand\p].random())][cts|Sun Dec 27 20:36:19 2015]</APP>
+<LINK>43</LINK>
+</PNL>
+<PNL serial=102>
+<TAG>re module</TAG>
+<APP>[!init|if \pmodules\p not in M:\r\n    M[\pmodules\p]=dict()\r\nif \pre\p not in M[\pmodules\p]:\r\n    import re\r\n    M[\pmodules\p][\pre\p]=re\r\n][cts|Thu Dec 31 20:34:10 2015][description|module implementing regular expression][memo|re.match]</APP>
+<LINK>47 55</LINK>
+</PNL>
+<PNL serial=103>
+<TAG>regular expression</TAG>
+<APP>[cts|Sun Jan 10 10:55:04 2016]</APP>
+<LINK>55</LINK>
+</PNL>
+<PNL serial=104>
+<TAG>related object</TAG>
+<APP>[cts|Fri Dec 18 15:18:50 2015]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=105>
+<TAG>replenish daily task</TAG>
+<APP>[cts|Sat Dec 19 13:16:07 2015][task|[1|M[\pwd\p].quit()\r\nprint(self.Say(\pBrowser is closed.\p))][2|M[\pmaop\p].Appoint(K.GetApp(\pGoOnXueShu\p))]][trigger|time.localtime().tm_hour==8]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=106>
+<TAG>right click</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=107>
+<TAG>selenium WebElement</TAG>
+<APP>[cts|Wed Dec 23 16:24:24 2015][description|The internal class for operation][memo|.click()\r\n.send_keys(\pabc\p)\r\nenter: {ENTER} or  ~][mts|Wed Dec 23 16:29:18 2015]</APP>
+<LINK>35</LINK>
+</PNL>
+<PNL serial=108>
+<TAG>selenium web driver</TAG>
+<APP>[!findelement|#you can use M[\pwd\p].find_element() method\r\n#need to work out a calling method][!init|#initiate the web driver to M[\pwd\p]\r\nfrom selenium import webdriver\r\no=webdriver.ChromeOptions()\r\no.add_argument(\puser-data-dir=C:\sUsers\sH2O\sAppData\sLocal\sGoogle\sChrome\sUser Data\p)\r\nM[\pwd\p]=webdriver.Chrome(chrome_options=o)\r\ntime.sleep(2)][!keys|from selenium.webdriver.common.keys import Keys\r\nM[\pt\p]=Keys.ENTER][!quit|#quit the web driver before start a new one\r\nM[\pwd\p].quit()][!switch|#switch to last page\r\nM[\pwd\p].switch_to.window(M[\pwd\p].window_handles[-1])][brief|.find_elements_by_class_name\r\n.find_element][cts|Sat Dec 19 13:03:07 2015][description|Allows to control web browser with python\r\nBeware that once you operate the window by hand, you will get errors controlling it by code.]</APP>
+<LINK>35 40</LINK>
+</PNL>
+<PNL serial=109>
+<TAG>single click</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=110>
+<TAG>software</TAG>
+<APP>[cts|Sat Dec 26 12:44:37 2015]</APP>
+<LINK>41</LINK>
+</PNL>
+<PNL serial=111>
+<TAG>sorting</TAG>
+<APP>[cts|Mon Jan 18 13:12:23 2016]</APP>
+<LINK>71 72</LINK>
+</PNL>
+<PNL serial=112>
+<TAG>str</TAG>
+<APP>[!test|for i in \p123452356\p:\r\n    print(i)][cts|Sun Jan 17 19:50:10 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=113>
+<TAG>subset</TAG>
+<APP>[cts|Fri Jan 15 08:36:47 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=114>
+<TAG>syntax</TAG>
+<APP>[cts|20110301]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=115>
+<TAG>threading</TAG>
+<APP>[cts|Fri Jan 15 08:38:07 2016][memo|threading.activeCount()\r\n#number of threads\r\n.enumerate()\r\n\r\n.Lock() #return lock object]</APP>
+<LINK>70</LINK>
+</PNL>
+<PNL serial=116>
+<TAG>time module</TAG>
+<APP>[!sec2str|#convert seconds to days-hours-minutes-seconds\r\n#args is float seconds\r\narg=args\r\nss=arg%60\r\narg=(arg-ss)\s60\r\nmm=arg%60\r\narg=(arg-mm)\s60\r\nhh=arg%24\r\ndd=(arg-hh)\s24\r\nans=\p%s day %s hour %s min %s sec\p%(dd,hh,mm,ss)\r\nprint(ans)][!uptime|#calculates up time\r\n#\r\nans=K.GetApp(\ptime module\p)(\p!sec2str\p,time.clock())][cts|Wed Dec 30 14:48:20 2015][description|Handles time related tasks]</APP>
+<LINK>44</LINK>
+</PNL>
+<PNL serial=117>
+<TAG>timed task</TAG>
+<APP>[!test|#the test will appoint a timed task\r\n#to print time on zero second\r\nM[\pmaop\p].Appoint(K.GetApp(\ptimed task\p))][cts|Sat Dec 19 13:21:37 2015][task|print(\pThis is %s\p%time.ctime())][trigger|time.localtime().tm_sec==0]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=118>
+<TAG>tuple</TAG>
+<APP>[!test|t=(1,2,3)\r\nt[0]=4\r\nprint(t)][cts|Mon Jan 18 08:58:00 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=119>
+<TAG>web page</TAG>
+<APP>[cts|Wed Jan  6 13:36:09 2016][description|that can be opened with a web browser]</APP>
+<LINK>54 68</LINK>
+</PNL>
+<PNL serial=120>
+<TAG>webbrowser</TAG>
+<APP>[!get|#args is url\r\nimport webbrowser\r\n#help(webbrowser)\r\nwebbrowser.open(args)]</APP>
+<LINK>39</LINK>
+</PNL>
+<PNL serial=121>
+<TAG>website</TAG>
+<APP>[cts|Fri Jan 15 07:39:16 2016][description|A collection of webpages run by one company]</APP>
+<LINK>68 69 78 79 80</LINK>
+</PNL>
+<PNL serial=122>
+<TAG>wizNote web</TAG>
+<APP>[CVURL|https:\s\snote.wiz.cn][cts|Fri Dec 25 08:07:20 2015]</APP>
+<LINK>37</LINK>
+</PNL>
+<PNL serial=123>
+<TAG>xueshu.baidu.com</TAG>
+<APP>[cts|Wed Dec 23 15:48:40 2015]</APP>
+<LINK>34 46 51</LINK>
+</PNL>
+</PNLbank>
+
+<PLLbank><BLANK_ID></BLANK_ID>
+<PLL>
+<ID>0</ID>
+<A>baidu</A>
+<B>GoOnXueShu</B>
+<ATTRIBUTE>related object</ATTRIBUTE>
+<lTAG>[cts|Sat Dec 19 12:31:52 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>1</ID>
+<A>Container</A>
+<B>ProxySelectedContainer</B>
+<ATTRIBUTE>proxy</ATTRIBUTE>
+<lTAG>[cts|20110228][mts|20110228]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>2</ID>
+<A>InfographX</A>
+<B>InfographX GUI components</B>
+<ATTRIBUTE>part</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>3</ID>
+<A>InfographX GUI components</A>
+<B>Datagram</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>4</ID>
+<A>Datagram</A>
+<B>link</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>5</ID>
+<A>Datagram</A>
+<B>note</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>6</ID>
+<A>Datagram</A>
+<B>Container</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>7</ID>
+<A>InfographX GUI components</A>
+<B>overView</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>8</ID>
+<A>InfographX GUI components</A>
+<B>propertyGrids</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>9</ID>
+<A>propertyGrids</A>
+<B>proxy</B>
+<ATTRIBUTE>call</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>10</ID>
+<A>note</A>
+<B>new note</B>
+<ATTRIBUTE>creation</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>11</ID>
+<A>Datagram</A>
+<B>new note</B>
+<ATTRIBUTE>double click</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>12</ID>
+<A>link</A>
+<B>new link</B>
+<ATTRIBUTE>creation</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>13</ID>
+<A>Datagram</A>
+<B>new link</B>
+<ATTRIBUTE>drag</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>14</ID>
+<A>InfographX</A>
+<B>CV</B>
+<ATTRIBUTE>extension</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>15</ID>
+<A>CV</A>
+<B>Conceiver</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>16</ID>
+<A>InfographX</A>
+<B>InfographX utilities</B>
+<ATTRIBUTE>part</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>17</ID>
+<A>Conceiver</A>
+<B>Concept Picker</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>18</ID>
+<A>Conceiver</A>
+<B>Manipulator</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>19</ID>
+<A>Conceiver</A>
+<B>Console</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>20</ID>
+<A>Conceiver</A>
+<B>Appendix Explorer</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>21</ID>
+<A>CV</A>
+<B>CV.syntax</B>
+<ATTRIBUTE>syntax</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>22</ID>
+<A>CV</A>
+<B>MScore</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>23</ID>
+<A>Console</A>
+<B>MScore</B>
+<ATTRIBUTE>call</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>24</ID>
+<A>A</A>
+<B>B</B>
+<ATTRIBUTE>C</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301][syntax|if C is a noun, the link can be understood as B is a C of A.]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>25</ID>
+<A>CV.syntax</A>
+<B>A</B>
+<ATTRIBUTE>example</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>26</ID>
+<A>CV.syntax</A>
+<B>consistency</B>
+<ATTRIBUTE>concept</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>27</ID>
+<A>MScore</A>
+<B>MScore database</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>28</ID>
+<A>consistency</A>
+<B>note.consistency</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>29</ID>
+<A>consistency</A>
+<B>link.consistency</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>30</ID>
+<A>Conceiver</A>
+<B>StyleRenderer</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>31</ID>
+<A>CV.syntax</A>
+<B>attribute</B>
+<ATTRIBUTE>concept</ATTRIBUTE>
+<lTAG>[cts|20110301][mts|20110301]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>32</ID>
+<A>python</A>
+<B>maop</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Tue Dec 22 17:46:37 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>33</ID>
+<A>baidu</A>
+<B>fanyi.baidu.com</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Wed Dec 23 15:48:21 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>34</ID>
+<A>baidu</A>
+<B>xueshu.baidu.com</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Wed Dec 23 15:48:49 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>35</ID>
+<A>selenium web driver</A>
+<B>selenium WebElement</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Wed Dec 23 16:24:42 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>36</ID>
+<A>application web interface</A>
+<B>WeChat web</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Fri Dec 25 08:04:33 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>37</ID>
+<A>application web interface</A>
+<B>wizNote web</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Fri Dec 25 08:07:43 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>38</ID>
+<A>python</A>
+<B>python module</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|Sat Dec 26 09:29:17 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>39</ID>
+<A>python module</A>
+<B>webbrowser</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Sat Dec 26 09:31:07 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>40</ID>
+<A>python module</A>
+<B>selenium web driver</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Sat Dec 26 09:31:32 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>41</ID>
+<A>software</A>
+<B>FastStone</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Sat Dec 26 12:45:06 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>42</ID>
+<A>python module</A>
+<B>os module</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Sat Dec 26 12:52:39 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>43</ID>
+<A>python module</A>
+<B>random module</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Sun Dec 27 20:36:33 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>44</ID>
+<A>python module</A>
+<B>time module</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Dec 30 14:48:50 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>45</ID>
+<A>python module</A>
+<B>math module</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Dec 30 15:16:59 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>46</ID>
+<A>xueshu.baidu.com</A>
+<B>baidu xueshu paperhelp</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[CVURL|http:\s\sxueshu.baidu.com\su\spaperhelp][cts|Thu Dec 31 20:00:17 2015][element|[gongguan|#args is the webdriver navigating to this page\r\nans=args.find_element(by=\pxpath\p,value=\p\s\s*[@id=\qlobby-left-container\q]\sdiv[2]\sul\sli[2]\p)]]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>47</ID>
+<A>python module</A>
+<B>re module</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Thu Dec 31 20:35:27 2015]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>48</ID>
+<A>QtGui</A>
+<B>QMessageBox</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|Mon Jan  4 09:33:27 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>49</ID>
+<A>python module</A>
+<B>PyQt4</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Mon Jan  4 09:39:52 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>50</ID>
+<A>PyQt4</A>
+<B>QtGui</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Mon Jan  4 09:40:23 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>51</ID>
+<A>xueshu.baidu.com</A>
+<B>baidu xueshu result page</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Tue Jan  5 07:28:09 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>52</ID>
+<A>maop</A>
+<B>mspaceExp</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|Tue Jan  5 11:02:58 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>53</ID>
+<A>python module</A>
+<B>matplotlib</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Jan  6 13:19:13 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>54</ID>
+<A>web page</A>
+<B>login page</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Jan  6 13:37:12 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>55</ID>
+<A>regular expression</A>
+<B>re module</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Sun Jan 10 10:55:28 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>56</ID>
+<A>C++ STL</A>
+<B>cpp vector</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Sun Jan 10 11:55:18 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>57</ID>
+<A>C++ STL</A>
+<B>cpp algorithm</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Sun Jan 10 11:59:10 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>58</ID>
+<A>C++ STL</A>
+<B>cpp stack</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Sun Jan 10 17:16:06 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>59</ID>
+<A>C++ STL</A>
+<B>cpp string</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 12 14:24:38 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>60</ID>
+<A>matplotlib</A>
+<B>pyplot</B>
+<ATTRIBUTE>package</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 12 14:48:11 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>61</ID>
+<A>python module</A>
+<B>numpy</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 12 14:49:21 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>62</ID>
+<A>greek alphabet</A>
+<B>omega</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 12 15:52:41 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>63</ID>
+<A>greek alphabet</A>
+<B>lambda</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 12 15:53:25 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>64</ID>
+<A>C++ STL</A>
+<B>cpp hashtable</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 12 18:58:26 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>65</ID>
+<A>C++ STL</A>
+<B>cpp map</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 12 20:23:20 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>66</ID>
+<A>algorithm</A>
+<B>binary search tree</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Wed Jan 13 18:04:00 2016][description|A tree whose values of left tree all less than root node, which is still less than right tree nodes. And whose left and right tree are also BSTs.]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>67</ID>
+<A>QtGui</A>
+<B>QPlainTextEdit</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|Thu Jan 14 11:57:13 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>68</ID>
+<A>website</A>
+<B>web page</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|Fri Jan 15 07:40:23 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>69</ID>
+<A>website</A>
+<B>China Film Cinema</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Fri Jan 15 07:42:36 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>70</ID>
+<A>python module</A>
+<B>threading</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Fri Jan 15 08:38:23 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>71</ID>
+<A>algorithm</A>
+<B>sorting</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Mon Jan 18 13:12:43 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>72</ID>
+<A>sorting</A>
+<B>linear-time sorting</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Mon Jan 18 13:13:46 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>73</ID>
+<A>QtGui</A>
+<B>QGraphicsView</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 19 08:19:58 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>74</ID>
+<A>WalArt</A>
+<B>mspaceExp</B>
+<ATTRIBUTE>module</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 19 08:35:07 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>75</ID>
+<A>WalArt</A>
+<B>alibExp</B>
+<ATTRIBUTE>module</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 19 08:39:02 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>76</ID>
+<A>WalArt</A>
+<B>maop</B>
+<ATTRIBUTE>module</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 19 08:39:19 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>77</ID>
+<A>mspaceExp</A>
+<B>alibExp</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 19 08:39:40 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>78</ID>
+<A>website</A>
+<B>elecfans</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 19 10:10:19 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>79</ID>
+<A>website</A>
+<B>emuch</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 19 10:11:31 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>80</ID>
+<A>website</A>
+<B>eetop</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Jan 19 10:13:08 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>81</ID>
+<A>python</A>
+<B>pip</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Tue Feb  2 11:52:28 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>82</ID>
+<A>pip</A>
+<B>github</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Tue Feb  2 12:01:45 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+</PLLbank>

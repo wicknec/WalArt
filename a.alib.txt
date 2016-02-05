@@ -1,0 +1,8 @@
+[c|d]
+[a|b]
+[e|[f|g]
+    [i|[j|kcdaawea
+cawdc
+asdca
+aceacaec]]
+    [h]]
