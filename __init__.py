@@ -24,6 +24,19 @@ Revisions for package main file:
          *ToList*
 160114 add *Call*, this will simplify the execution process
 160204 modified alib.setValue, alib.getValue for custom separator
+160602 Cancelled extension appending in alib.Save and .Load for clarity
+161107 Added exception handling in alib.Call
+161117 add filename display in alib.Call
+161126 modified alib.ToString for more clear presentation
+180326 fixed alib.ToString to eliminate recursion
+180327 fixed alib object not hashable, using object.__repr__(alib)
+180424 improved getValue for path check
+    add string input support in __init__
+    upgraded alib.ToList to support name assignment
+    override alib.__getattr__ for more convenient reference, save __setattr__ when necessary
+180604 fixed alib.FromString when the first character is \r
+181104 add if isinstance(self[i],list) or isinstance(self[i],tuple) to fix the ambiguous problem
+
 '''
 __all__ = ['waText','alib','waFile']
 
@@ -35,23 +48,38 @@ A tree-like structure with string keys.
 Used for general information recording and knowledge representation
 Equivalent to AttributeLibrary in CV
 The values can be str, or another alib or an object
+
+The deflated alib will have all string representations, 
+while the inflated one can have object as value
 '''
     def __init__(self,d={}):
         '''
-Converts a dict to corresponding alib by converting its keys and values to strings
+Converts a dict to corresponding alib by converting its keys to strings
 '''
         dict.__init__(self)
         self.type='alib'
-        for i in d:
-            self[str(i)]=str(d[i])
+        if isinstance(d,dict):
+            for i in d:
+                self[str(i)]=d[i]
+        elif isinstance(d,str):
+            self.FromString(d)
+
     def __iter__(self):
-        '''To traverse in good order
+        '''To traverse in alphabetical order
 '''
         return alibiter(self)
     def __str__(self):
         return self.ToString()
+    
+    def __getattr__(self,name):
+        ''' favors intrinsic values'''
+        if name in self.__dict__:
+            return self.__dict__[name]
+        else:
+            return self[name]
+    
 
-    def ToString(self,indent=False):
+    def ToString(self,indent=False,visited=None):
         '''
 Converts an alib to its string representation.
 e.g. [a|b][c|d][e|[f|g][h][i|[j|k]]]
@@ -59,18 +87,31 @@ indent: the leading white spaces
 '''
         result=''
         if indent!=False:
-            ni=indent+'    '
+            ni=indent+'    '#next indent
+            begin='\n' #str to add at the begining of a new expressive node
         else:
             ni=False
-            
+            begin=''
         for i in self:
-            if indent!=False and len(result)!=0:
-                result+='\n'+indent
+            if indent!=False:
+                if result:
+                    result+='\n'+indent
+                else:
+                    result=indent
             if isinstance(self[i],alib):
-                result+='['+i+'|'+self[i].ToString(ni)+']'
+                if not visited:
+                    visited={}
+                sh=object.__repr__(self[i]) #a unique identifier for the alib throughout its lifetime
+                if sh in visited:
+                    result+='['+i+'|...]'
+                else:
+                    visited[sh]=True
+                    result+='['+i+'|'+begin+self[i].ToString(ni,visited)+']'
             else:
                 result+='['+i
-                if self[i]==None or isinstance(self[i],str) and len(self[i])==0:
+                if isinstance(self[i],list) or isinstance(self[i],tuple):
+                    result+='|'+str(self[i])+']'
+                elif self[i]==None or isinstance(self[i],str) and len(self[i])==0:
                     result+=']'
                 else:
                     result+='|'+str(self[i])+']'
@@ -100,18 +141,29 @@ indent: the leading white spaces
                 if col==-1:
                     self[content]=''
                     content,cur=waText.SkipUntil(s,'[',cur)
+                    #if no content marker | found, treat it just as a name, and continue to next block
                     continue
                 elif col==0: #then auto index
                     while str(i) in self:
                         i+=1
                     k=str(i)
                 else:
+                    #in the normal case, the name is before|
                     k=content[0:col]
-                    
+                #then treat the value part
                 if col+1>=len(content):
                     self[k]=''
                 elif content[col+1]=='[':
                     self[k]=alib().FromString(content[col+1:])
+                elif content[col+1]=='\r' or content[col+1]=='\n':
+                    #dealing with the pretty print trick
+                    #only if the next line is whitespace and then start with [
+                    wsp,ncur=waText.SkipUntil(content,'[',col+1)
+                    if wsp.strip()=='':
+                        #then should be treated as an alib
+                        self[k]=alib().FromString(content[col+1:])
+                    else:
+                        self[k]=content[col+1:] #treat as a normal string
                 else:
                     self[k]=content[col+1:]
             content,cur=waText.SkipUntil(s,'[',cur)
@@ -119,16 +171,16 @@ indent: the leading white spaces
     def Load(self,filename):
         '''Load from text file
 '''
-        if waFile.GetExtension(filename)=='':
-            filename+='.alib.txt'
+        #if waFile.GetExtension(filename)=='':
+        #    filename+='.alib.txt'
         s=waFile.LoadText(filename)
         self.FromString(s)
         return self
     def Save(self,filename):
         '''Save contents to text file
 '''
-        if waFile.GetExtension(filename)=='':
-            filename+='.alib.txt'
+        #if waFile.GetExtension(filename)=='':
+        #    filename+='.alib.txt'
         s=self.ToString('')
         waFile.SaveText(filename,s)
     def getValue(self,path,separator='|'):
@@ -141,7 +193,10 @@ if the path does not exist, raise IndexError
         k=path.pop(0)
         v=self[k]
         for k in path:
-            v=v[k]
+            if isinstance(v,dict):
+                v=v[k]
+            else:
+                raise KeyError('Path ({}) is too long, stopped at {}'.format(path,k))
         return v
     def setValue(self,path,v,separator='|'):
         '''Set the value of given path, create if necessary
@@ -211,22 +266,33 @@ Return merged self
 '''
         i=self.FindLastIndex()
         self[str(i+1)]=data
-    def ToList(self):
+    def ToList(self,names=None):
         '''Convert the numeric content to a list, start from 1
 '''
         l=[]
-        i=1
-        while str(i) in self:
-            l.append(self[str(i)])
-            i+=1
+        if not names:
+            i=1
+            while str(i) in self:
+                l.append(self[str(i)])
+                i+=1
+        else:
+            for n in names:
+                l.append(self[n])
         return l
     def Call(self,s,args,glbs=globals()):
         '''Execute string indicated in s, using args as arguments,
 and returns ans if available
 '''
         if s in self:
-            s=self[s]
-        exec(s,glbs,locals())
+            code=self[s]
+        else:
+            code=s
+        try:
+            exec(compile(code,filename=s,mode='exec'),glbs,locals())
+        except Exception as e:
+            if 'message' in e.__dict__:
+                e.message+='\nIn calling %s with (%s)'%(s,args)
+            raise e
         if 'ans' in locals():
             #print(locals())
             return locals()['ans']

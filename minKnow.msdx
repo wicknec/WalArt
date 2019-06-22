@@ -3,616 +3,981 @@
 </comment>
 <PNLbank>
 <PNL serial=1>
+<TAG>12306.cn</TAG>
+<APP>[CVURL|https:\s\skyfw.12306.cn\sotn\sleftTicket\sinit][cts|Thu Mar 10 06:58:54 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=2>
 <TAG>A</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>24 25</LINK>
 </PNL>
-<PNL serial=2>
+<PNL serial=3>
+<TAG>ACS Nano</TAG>
+<APP>[CVURL|http:\s\spubs.acs.org\sjournal\sancac3][cts|Tue Apr 19 09:35:06 2016]</APP>
+<LINK>128</LINK>
+</PNL>
+<PNL serial=4>
+<TAG>Angstrom</TAG>
+<APP>[cts|Thu Apr 14 09:21:35 2016][description|Å]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=5>
 <TAG>Appendix Explorer</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>20</LINK>
 </PNL>
-<PNL serial=3>
+<PNL serial=6>
 <TAG>B</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>24</LINK>
 </PNL>
-<PNL serial=4>
+<PNL serial=7>
 <TAG>C</TAG>
 <APP>[cts|20110301][mts|20110301][tip|this is an example of CV.syntax]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=5>
+<PNL serial=8>
 <TAG>C++ STL</TAG>
 <APP>[cts|Sun Jan 10 11:54:31 2016]</APP>
 <LINK>56 57 58 59 64 65</LINK>
 </PNL>
-<PNL serial=6>
+<PNL serial=9>
 <TAG>CV</TAG>
 <APP>[acronym|concept visualizer][author|Wicknec][cts|20110301][description|C# realization of mspace explorer][mts|20110301]</APP>
 <LINK>14 15 21 22</LINK>
 </PNL>
-<PNL serial=7>
+<PNL serial=10>
 <TAG>CV.syntax</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>21 25 26 31</LINK>
 </PNL>
-<PNL serial=8>
+<PNL serial=11>
 <TAG>CVURL</TAG>
 <APP>[!|import os\r\nK in globals()\r\nif args.startswith(\phttp\p):\r\n    K.GetApp(\pwebbrowser\p)(\p!get\p,args)\r\nelse:\r\n    print(\popenning %s\p% args)\r\n    os.system(\p\q%s\q\p% args)][!find|#find nodes with CVURL property\r\n][cts|Tue Dec 29 17:15:39 2015]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=9>
+<PNL serial=12>
 <TAG>China Film Cinema</TAG>
 <APP>[CVURL|http:\s\swww.cfc.com.cn\ssearch\sschedule.aspx][cts|Fri Jan 15 07:41:40 2016]</APP>
 <LINK>69</LINK>
 </PNL>
-<PNL serial=10>
+<PNL serial=13>
+<TAG>Chinese character</TAG>
+<APP>[cts|Thu Mar 24 16:06:45 2016]</APP>
+<LINK>120 132</LINK>
+</PNL>
+<PNL serial=14>
 <TAG>Conceiver</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>15 17 18 19 20 30</LINK>
 </PNL>
-<PNL serial=11>
+<PNL serial=15>
 <TAG>Concept Picker</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>17</LINK>
 </PNL>
-<PNL serial=12>
+<PNL serial=16>
 <TAG>Console</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>19 23</LINK>
 </PNL>
-<PNL serial=13>
+<PNL serial=17>
 <TAG>Container</TAG>
 <APP>[cts|20110228]</APP>
 <LINK>1 6</LINK>
 </PNL>
-<PNL serial=14>
+<PNL serial=18>
 <TAG>Datagram</TAG>
 <APP>[cts|20110301][mts|20110301]</APP>
 <LINK>3 4 5 6 11 13</LINK>
 </PNL>
-<PNL serial=15>
+<PNL serial=19>
 <TAG>FastStone</TAG>
 <APP>[!run|import os\r\nos.system(\p\qD:\\Green Program Files\\FSCapture\\FSCapture.exe\q\p)][CVURL|D:\\Green Program Files\\FSCapture\\FSCapture.exe][cts|Sat Dec 26 12:44:50 2015]</APP>
 <LINK>41</LINK>
 </PNL>
-<PNL serial=16>
+<PNL serial=20>
+<TAG>FormatFactory</TAG>
+<APP>[CVURL|D:\\Green Program Files\\FormatFactory\\FormatFactory.exe][cts|Fri Mar 11 08:53:47 2016]</APP>
+<LINK>118</LINK>
+</PNL>
+<PNL serial=21>
+<TAG>GUI modules</TAG>
+<APP>[cts|Mon Mar 14 10:37:46 2016]</APP>
+<LINK>110 39 112</LINK>
+</PNL>
+<PNL serial=22>
 <TAG>GoOnXueShu</TAG>
-<APP>[cts|Fri Dec 18 10:37:36 2015][element|[advsearch|\s\s*[@id=\qfm\q]\sdiv[1]\sspan][allword|\s\s*[@id=\qsc_adv_frm\q]\sdiv[1]\sspan[2]\sinput][bdsearchbutton|su][bdsearchinput|kw][mySubs|\s\s*[@id=\qmsg_r_content\q]\sdiv[2]\sp\sspan[2]][search|\s\s*[@id=\qsc_adv_frm\q]\sspan[2]\sinput]][pos|[advsearch|(1131,286)][allword|(938,332)][bdsearch|(788,288)][emuchCoin|(1011,452)][mySubs|(327,217)][winclose|(1898,11)][windowup|(1172,15)]][query|import sys\r\nprint(\p\\n?\p)\r\nq=sys.stdin.readline().rstrip()\r\nwhile q!=\pquit\p:\r\n    try:\r\n        print(eval(q))\r\n    except Exception as e:\r\n        import traceback\r\n        traceback.print_exc()\r\n    print(\p\\n?\p)\r\n    q=sys.stdin.readline().rstrip()][task|[1|from selenium import webdriver\r\no=webdriver.ChromeOptions()\r\no.add_argument(\puser-data-dir=C:\sUsers\sH2O\sAppData\sLocal\sGoogle\sChrome\sUser Data\p)\r\nM[\pwd\p]=webdriver.Chrome(chrome_options=o)][2|M[\pelement\p]=K.GetApp(\pGoOnXueShu\p)[\pelement\p]][3|M[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\p)][4|M[\pwd\p].find_element_by_xpath(M[\pelement\p][\padvsearch\p]).click()][5|M[\pwd\p].find_element_by_xpath(M[\pelement\p][\pallword\p]).send_keys(\pCNT photonic\p)][6|M[\pwd\p].find_element_by_xpath(M[\pelement\p][\psearch\p]).click()][7|M[\pwd\p].execute_script(\pwindow.open(\qhttp:\s\sxueshu.baidu.com\su\spaperhelp\q)\p)][8|M[\pwd\p].switch_to.window(M[\pwd\p].window_handles[1])][9|M[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\susercenter?tab=collect\p)][10|M[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\susercenter\p)][11|M[\pwd\p].find_element_by_xpath(M[\pelement\p][\pmySubs\p]).click()][12|M[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\p)][13|M[\pwd\p].find_element_by_id(\pkw\p).send_keys(u\pair\p)][14|M[\pwd\p].find_element_by_id(M[\pelement\p][\pbdsearchbutton\p]).click()][15|M[\pwd\p].execute_script(\pwindow.open(\qhttp:\s\semuch.net\sbbs\q)\p)][16|M[\pwd\p].switch_to.window(M[\pwd\p].window_handles[2])][17|time.sleep(1)\r\nM[\pwd\p].find_element_by_partial_link_text(\p红包\p).click()][18|M[\pwd\p].switch_to.window(M[\pwd\p].window_handles[2])][19|M[\pwd\p].find_element_by_name(\pcreditsubmit\p).click()][20|M[\pmaop\p].Appoint(K.GetApp(\preplenish daily task\p))][c1|M[\pso\p].SetCursorPos(eval(M[\ppos\p][\pbdsearch\p]))\r\nM[\pso\p].MouseClick()][c2|M[\pso\p].SetCursorPos(eval(M[\ppos\p][\padvsearch\p]))\r\nM[\pso\p].MouseClick()][c3|M[\pso\p].SetCursorPos(eval(M[\ppos\p][\pallword\p]))\r\nM[\pso\p].MouseClick()][c4|M[\pso\p].Str2clipboard(\pCNT photonic\p)][c5|M[\pso\p].KeyboardComb(\pctrl v\p)][c6|M[\pso\p].KeyboardComb(\penter\p)][c7|M[\pso\p].SetCursorPos(eval(M[\ppos\p][\pmySubs\p]))\r\nM[\pso\p].MouseClick()]][trigger|time.localtime().tm_hour==7]</APP>
+<APP>[cts|Fri Dec 18 10:37:36 2015][element|[advsearch|\s\s*[@id=\qfm\q]\sdiv[1]\sspan][allword|\s\s*[@id=\qsc_adv_frm\q]\sdiv[1]\sspan[2]\sinput][bdsearchbutton|su][bdsearchinput|kw][mySubs|\s\s*[@id=\qmsg_r_content\q]\sdiv[2]\sp\sspan[2]][search|\s\s*[@id=\qsc_adv_frm\q]\sspan[2]\sinput]][pos|[advsearch|(1131,286)][allword|(938,332)][bdsearch|(788,288)][emuchCoin|(1011,452)][mySubs|(327,217)][winclose|(1898,11)][windowup|(1172,15)]][query|import sys\r\nprint(\p\\n?\p)\r\nq=sys.stdin.readline().rstrip()\r\nwhile q!=\pquit\p:\r\n    try:\r\n        print(eval(q))\r\n    except Exception as e:\r\n        import traceback\r\n        traceback.print_exc()\r\n    print(\p\\n?\p)\r\n    q=sys.stdin.readline().rstrip()][task|[1|from selenium import webdriver\r\no=webdriver.ChromeOptions()\r\no.add_argument(\puser-data-dir=C:\sUsers\sH2O\sAppData\sLocal\sGoogle\sChrome\sUser Data\p)\r\nM[\pwd\p]=webdriver.Chrome(chrome_options=o)][2|M[\pelement\p]=K.GetApp(\pGoOnXueShu\p)[\pelement\p]][3|M[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\p)][4|M[\pwd\p].find_element_by_xpath(M[\pelement\p][\padvsearch\p]).click()][5|M[\pwd\p].find_element_by_xpath(M[\pelement\p][\pallword\p]).send_keys(\pCNT photonic\p)][6|M[\pwd\p].find_element_by_xpath(M[\pelement\p][\psearch\p]).click()][7|M[\pwd\p].execute_script(\pwindow.open(\qhttp:\s\sxueshu.baidu.com\su\spaperhelp\q,_newtab)\p)][8|#M[\pwd\p].switch_to.window(M[\pwd\p].window_handles[1])][9|M[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\susercenter?tab=collect\p)][10|M[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\susercenter\p)][11|M[\pwd\p].find_element_by_xpath(M[\pelement\p][\pmySubs\p]).click()][12|M[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\p)][13|M[\pwd\p].find_element_by_id(\pkw\p).send_keys(u\pair\p)][14|M[\pwd\p].find_element_by_id(M[\pelement\p][\pbdsearchbutton\p]).click()][15|M[\pwd\p].get(\qhttp:\s\semuch.net\sbbs\q)][16|#M[\pwd\p].switch_to.window(M[\pwd\p].window_handles[2])][17|time.sleep(1)\r\nM[\pwd\p].find_element_by_partial_link_text(\p红包\p).click()][18|#M[\pwd\p].switch_to.window(M[\pwd\p].window_handles[2])][19|M[\pwd\p].find_element_by_name(\pcreditsubmit\p).click()][20|M[\pmaop\p].Appoint(K.GetApp(\preplenish daily task\p))][c1|M[\pso\p].SetCursorPos(eval(M[\ppos\p][\pbdsearch\p]))\r\nM[\pso\p].MouseClick()][c2|M[\pso\p].SetCursorPos(eval(M[\ppos\p][\padvsearch\p]))\r\nM[\pso\p].MouseClick()][c3|M[\pso\p].SetCursorPos(eval(M[\ppos\p][\pallword\p]))\r\nM[\pso\p].MouseClick()][c4|M[\pso\p].Str2clipboard(\pCNT photonic\p)][c5|M[\pso\p].KeyboardComb(\pctrl v\p)][c6|M[\pso\p].KeyboardComb(\penter\p)][c7|M[\pso\p].SetCursorPos(eval(M[\ppos\p][\pmySubs\p]))\r\nM[\pso\p].MouseClick()]][trigger|time.localtime().tm_hour==7]</APP>
 <LINK>0</LINK>
 </PNL>
-<PNL serial=17>
+<PNL serial=23>
 <TAG>InfographX</TAG>
 <APP>[cts|20110228]</APP>
 <LINK>2 14 16</LINK>
 </PNL>
-<PNL serial=18>
+<PNL serial=24>
 <TAG>InfographX GUI components</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>2 3 7 8</LINK>
 </PNL>
-<PNL serial=19>
+<PNL serial=25>
 <TAG>InfographX utilities</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>16</LINK>
 </PNL>
-<PNL serial=20>
+<PNL serial=26>
+<TAG>JavaScript</TAG>
+<APP>[cts|Mon Feb 15 09:40:06 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=27>
+<TAG>Journal Citation Reports</TAG>
+<APP>[CVURL|https:\s\sjcr.incites.thomsonreuters.com\sJCRJournalHomeAction.action?SID=B1-HXqjTtr39Ox2By54WurEmJMCOKqbJV3x2FTv-18x2drtR1lS9ZcOUa4tn0JGiq6Ax3Dx3DWYmSr3mPx2FGT2FseozWvKGgx3Dx3D-9vvmzcndpRgQCGPd1c2qPQx3Dx3D-wx2BJQh9GKVmtdJw3700KssQx3Dx3D&amp;refineString=null&amp;SrcApp=IC2LS&amp;timeSpan=null&amp;Init=Yes&amp;wsid=2CkCT2dFXfF6qlwBTTt][cts|Fri Mar 11 09:51:48 2016]</APP>
+<LINK>107</LINK>
+</PNL>
+<PNL serial=28>
+<TAG>MAC address</TAG>
+<APP>[cts|Tue Apr 26 10:11:54 2016][memo|acquire:\r\ncmd-&gt; ipconfig \sall]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=29>
 <TAG>MScore</TAG>
 <APP>[abbreviation|mind space core program][author|Wicknec][cts|20110301][mts|20110301][purpose|for managing MScore database]</APP>
 <LINK>22 23 27</LINK>
 </PNL>
-<PNL serial=21>
+<PNL serial=30>
 <TAG>MScore database</TAG>
 <APP>[cts|20110301][mts|20110301][purpose|for accumulating ideas. Different graphs can be parts of the same MScore database]</APP>
 <LINK>27</LINK>
 </PNL>
-<PNL serial=22>
+<PNL serial=31>
 <TAG>Manipulator</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>18</LINK>
 </PNL>
-<PNL serial=23>
+<PNL serial=32>
 <TAG>Maya</TAG>
 <APP>[cts|Thu Jan  7 16:33:41 2016][setParentProblem|$exists=0;\r\n for ($item in `getPanel -scriptType \qrenderWindowPanel\q`) {\r\n        if ( $item == \qrenderView\q ) {\r\n                print \qrenderView exists.\\n\q;\r\n                $exists=1;\r\n        }\r\n }\r\n if ( $exists == 0 ) {\r\n        for ($item in `getPanel -scriptType \qrenderWindowPanel\q`) {\r\n                \s\sprint ( $item + \q\\n\q);\r\n                if ( $item == \qrenderWindowPanel1\q ) {\r\n                deleteUI renderWindowPanel1;\r\n                $renderPanel = `scriptedPanel -type \qrenderWindowPanel\q -unParent renderView`;\r\n                scriptedPanel -e -label `interToUI $renderPanel` $renderPanel;\r\n                }\r\n        }\r\n }]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=24>
+<PNL serial=33>
+<TAG>Mendeley</TAG>
+<APP>[CVURL|\qC:\\Program Files\\Mendeley Desktop\\MendeleyDesktop.exe\q][cts|Mon Mar 21 10:15:44 2016][description|An article management software.]</APP>
+<LINK>117</LINK>
+</PNL>
+<PNL serial=34>
+<TAG>Nano Letters</TAG>
+<APP>[CVURL|http:\s\spubs.acs.org\sjournal\snalefd\s][cts|Tue Apr 19 09:31:10 2016]</APP>
+<LINK>127</LINK>
+</PNL>
+<PNL serial=35>
+<TAG>Nature communcations</TAG>
+<APP>[CVURL|http:\s\swww.nature.com\sncomms\sindex.html][cts|Tue Apr 19 09:42:35 2016]</APP>
+<LINK>131</LINK>
+</PNL>
+<PNL serial=36>
+<TAG>Nature journals</TAG>
+<APP>[cts|Tue Apr 19 09:40:35 2016]</APP>
+<LINK>129 130 131</LINK>
+</PNL>
+<PNL serial=37>
+<TAG>Nature nanotechnology</TAG>
+<APP>[CVURL|http:\s\swww.nature.com\snnano\sindex.html][cts|Tue Apr 19 09:37:06 2016]</APP>
+<LINK>130</LINK>
+</PNL>
+<PNL serial=38>
+<TAG>PhD comics</TAG>
+<APP>[CVURL|http:\s\sphdcomics.com\scomics.php][cts|Thu Mar 10 09:31:48 2016]</APP>
+<LINK>105</LINK>
+</PNL>
+<PNL serial=39>
+<TAG>PhotoShop</TAG>
+<APP>[CVURL|D:\\Green Program Files\\Adobe Photoshop CS6\\Photoshop.exe][cts|Fri Mar 18 07:29:26 2016]</APP>
+<LINK>119</LINK>
+</PNL>
+<PNL serial=40>
 <TAG>ProxySelectedContainer</TAG>
 <APP>[cts|20110228][mts|20110301][u|todo][unimplemented]</APP>
 <LINK>1</LINK>
 </PNL>
-<PNL serial=25>
+<PNL serial=41>
 <TAG>PyQt4</TAG>
 <APP>[cts|Mon Jan  4 09:39:24 2016]</APP>
 <LINK>49 50</LINK>
 </PNL>
-<PNL serial=26>
+<PNL serial=42>
+<TAG>QGraphicsSceneMouseEvent</TAG>
+<APP>[CVURL|http:\s\sdoc.qt.io\sqt-4.8\sqgraphicsscenemouseevent.html][cts|Fri Feb 19 15:10:07 2016][memo|button()\r\nbuttons()\r\npos()]</APP>
+<LINK>88</LINK>
+</PNL>
+<PNL serial=43>
 <TAG>QGraphicsView</TAG>
 <APP>[cts|Tue Jan 19 08:18:31 2016]</APP>
 <LINK>73</LINK>
 </PNL>
-<PNL serial=27>
+<PNL serial=44>
 <TAG>QMessageBox</TAG>
 <APP>[!test|from PyQt4 import QtGui\r\nr=QtGui.QMessageBox.question(None,\pQuestion\p,\pAsk\p,\pYes\p,\pNo\p)\r\nprint(\pthe return is %s\p%r)][cts|Mon Jan  4 09:32:56 2016]</APP>
 <LINK>48</LINK>
 </PNL>
-<PNL serial=28>
+<PNL serial=45>
 <TAG>QPlainTextEdit</TAG>
 <APP>[cts|Thu Jan 14 11:55:57 2016][memo|.setPlainText(\p123\p)\r\n]</APP>
 <LINK>67</LINK>
 </PNL>
-<PNL serial=29>
+<PNL serial=46>
+<TAG>QPushButton</TAG>
+<APP>[cts|Fri May 20 14:05:09 2016]</APP>
+<LINK>136</LINK>
+</PNL>
+<PNL serial=47>
+<TAG>QWidget</TAG>
+<APP>[cts|Fri May 20 14:02:08 2016][memo|.setWindowTitle(text)\r\n\r\n.setGeometry(x1,y1,x2,y2)\r\n]</APP>
+<LINK>135</LINK>
+</PNL>
+<PNL serial=48>
 <TAG>QtGui</TAG>
 <APP>[!init|if \pmodules\p not in M:\r\n    M[\pmodules\p]=dict()\r\nif \pQtGui\p not in M[\pmodules\p]:\r\n    from PyQt4 import QtGui\r\n    M[\pmodules\p][\pQtGui\p]=QtGui][cts|Mon Jan  4 09:32:36 2016]</APP>
-<LINK>48 50 67 73</LINK>
+<LINK>48 50 67 73 88 135 136</LINK>
 </PNL>
-<PNL serial=30>
-<TAG>StringIO</TAG>
-<APP>[cts|Thu Feb  4 10:29:08 2016][description|A package in python 2.x\r\nintegrated to io in python 3.x]</APP>
+<PNL serial=49>
+<TAG>RMB</TAG>
+<APP>[cts|Thu Mar 24 12:53:57 2016][description|￥ ¥]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=31>
+<PNL serial=50>
+<TAG>StringIO</TAG>
+<APP>[cts|Thu Feb  4 10:29:08 2016][description|A package in python 2.x\r\nintegrated to io in python 3.x]</APP>
+<LINK>83</LINK>
+</PNL>
+<PNL serial=51>
 <TAG>StyleRenderer</TAG>
 <APP>[cts|20110301][mts|20110301][not fully implemented]</APP>
 <LINK>30</LINK>
 </PNL>
-<PNL serial=32>
+<PNL serial=52>
+<TAG>TopUniversities</TAG>
+<APP>[CVURL|http:\s\swww.topuniversities.com\sqs-world-university-rankings][cts|Fri Apr 22 08:29:02 2016]</APP>
+<LINK>133</LINK>
+</PNL>
+<PNL serial=53>
+<TAG>UltraEdit</TAG>
+<APP>[CVURL|E:\\Green Program Files\\UltraEdit\\Uedit32.exe][cts|Mon Feb 15 14:09:02 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=54>
 <TAG>WalArt</TAG>
 <APP>[description|Walnut Artifacts\r\nA package written by wic]</APP>
-<LINK>74 75 76</LINK>
+<LINK>74 75 76 89 113 121</LINK>
 </PNL>
-<PNL serial=33>
+<PNL serial=55>
 <TAG>WeChat web</TAG>
 <APP>[CVURL|https:\s\swx.qq.com][cts|Fri Dec 25 08:02:57 2015][elements|[chatContact|xpath,\s\s*[@id=\qJ_NavChatScrollBody\q]\sdiv][editArea|id,editArea][send|class,btn_send]]</APP>
 <LINK>36</LINK>
 </PNL>
-<PNL serial=34>
+<PNL serial=56>
 <TAG>algorithm</TAG>
 <APP>[cts|Wed Jan 13 18:03:39 2016]</APP>
 <LINK>66 71</LINK>
 </PNL>
-<PNL serial=35>
+<PNL serial=57>
+<TAG>alib</TAG>
+<APP>[cts|Fri May 20 10:12:52 2016][description|A data structure expanded from dict, for hierarchial text.][memo|.ToString(\p\p)\r\nExpand to hierarchy]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=58>
 <TAG>alibExp</TAG>
-<APP>[cts|Tue Jan 19 08:38:50 2016][description|A python module\r\nA python class\r\nA graphic interface][memo|.GetCurrent()\r\n\r\n.GetSelectedText()]</APP>
+<APP>[cts|Tue Jan 19 08:38:50 2016][description|A python module\r\nA python class\r\nA graphic interface][memo|.GetCurrent()\r\n\r\n.GetSelectedText()\r\n\r\n#the exploring app\r\nself.treeWidget.data]</APP>
 <LINK>75 77</LINK>
 </PNL>
-<PNL serial=36>
+<PNL serial=59>
 <TAG>application</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=37>
+<PNL serial=60>
 <TAG>application web interface</TAG>
 <APP>[cts|Fri Dec 25 08:03:42 2015][description|For web access by maop]</APP>
 <LINK>36 37</LINK>
 </PNL>
-<PNL serial=38>
+<PNL serial=61>
+<TAG>arrow</TAG>
+<APP>[cts|Fri Mar 11 09:16:04 2016][description|←↑→↓↔↕\r\n]</APP>
+<LINK>106</LINK>
+</PNL>
+<PNL serial=62>
 <TAG>attribute</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>31</LINK>
 </PNL>
-<PNL serial=39>
+<PNL serial=63>
 <TAG>baidu</TAG>
 <APP>[cts|Fri Dec 18 15:19:55 2015]</APP>
 <LINK>0 33 34</LINK>
 </PNL>
-<PNL serial=40>
+<PNL serial=64>
 <TAG>baidu xueshu paperhelp</TAG>
 <APP>[!go|[1|exec(K.GetApp(\pselenium web driver\p)[\p!init\p])][2|k=K.nodes[\pbaidu xueshu paperhelp\p].app[\pCVURL\p]\r\nprint(k)\r\nM[\pwd\p].get(k)][3|exec(K.GetApp(\pbaidu xueshu paperhelp\p)[\pelement\p][\pgongguan\p])][4|#init matching\r\nimport re\r\nM[\pre\p]=re.compile(\pwiley|jstor|ieee|springer|nature\p)\r\nM[\pmaop\p].Appoint(K.GetApp(\pbaidu xueshu paperhelp\p)[\p!loop\p])]][!loop|[1|#navigate to next page\r\nM[\pwd\p].find_element_by_class_name(\pc-icon-page-next\p).click()][2|#see if the items match\r\nans=M[\pwd\p].find_element_by_class_name(\pres-page-number-now\p)\r\nprint(ans.text)\r\nans=M[\pwd\p].find_elements_by_class_name(\pres-intro\p)\r\nwait=False\r\nfor i in ans:\r\n    if M[\pre\p].search(i.text):\r\n        print(i.text)\r\n        wait=True\r\nif not wait:\r\n    M[\pmaop\p].Appoint(K.GetApp(\pbaidu xueshu paperhelp\p)[\p!loop\p])]][!nextpage|M[\pwd\p].find_element_by_class_name(\pc-icon-page-next\p).click()][#class|web page][CVURL|http:\s\sxueshu.baidu.com\su\spaperhelp][cts|Thu Dec 31 19:58:40 2015][element|[gongguan|#click\r\nM[\pwd\p].find_element_by_xpath(\p\s\s*[@id=\qlobby-left-container\q]\sdiv[2]\sul\sli[2]\p).click()][res-intro|ans=M[\pwd\p].find_elements_by_class_name(\pres-intro\p)\r\nM[\pt\p]=ans[0]]]</APP>
 <LINK>46</LINK>
 </PNL>
-<PNL serial=41>
+<PNL serial=65>
 <TAG>baidu xueshu result page</TAG>
-<APP>[cts|Tue Jan  5 07:27:34 2016][element|[input|ans=M[\pwd\p].find_element_by_id(\pkw\p)\r\nM[\pans\p]=ans][nums|ans=M[\pwd\p].find_element_by_class_name(\pnums\p)\r\nprint(ans.text)][search|M[\pwd\p].find_element_by_class_name(\ps_btn\p).click()]]</APP>
+<APP>[!countEntry|#get the number of search results\r\n#provided the page is already open\r\n#args[\pk\p] is the keyword for search\r\nimport time\r\nif \pM\p not in dir():\r\n    M=args[\pM\p]\r\nk=M[\pwd\p].find_element_by_id(\pkw\p)\r\nk.clear()\r\nk.send_keys(args[\pk\p])\r\nM[\pwd\p].find_element_by_class_name(\ps_btn\p).click()\r\ntime.sleep(1)\r\nans=M[\pwd\p].find_element_by_class_name(\pnums\p).text\r\nprint(ans)\r\nimport re\r\nans=re.sub(\p[^\\d]\p,\p\p,ans)][!open|exec(K.GetApp(\pselenium web driver\p)[\p!init\p])\r\nM[\pwd\p].get(\phttp:\s\sxueshu.baidu.com\p)\r\ntime.sleep(1)\r\nM[\pwd\p].find_element_by_id(\pkw\p).send_keys(\p123\p)\r\nM[\pwd\p].find_element_by_class_name(\ps_btn\p).click()][!test|q=\q\pM\p in dir()\q\r\nprint(q+\p:\p+str(eval(q)))][cts|Tue Jan  5 07:27:34 2016][element|[input|ans=M[\pwd\p].find_element_by_id(\pkw\p)\r\nM[\pans\p]=ans][nums|ans=M[\pwd\p].find_element_by_class_name(\pnums\p)\r\nprint(ans.text)][search|M[\pwd\p].find_element_by_class_name(\ps_btn\p).click()]]</APP>
 <LINK>51</LINK>
 </PNL>
-<PNL serial=42>
+<PNL serial=66>
+<TAG>big solid circle</TAG>
+<APP>[cts|Wed Mar  2 10:27:53 2016][description|●]</APP>
+<LINK>100</LINK>
+</PNL>
+<PNL serial=67>
+<TAG>big wire circle</TAG>
+<APP>[cts|Wed Mar  2 10:28:35 2016][description|○]</APP>
+<LINK>101</LINK>
+</PNL>
+<PNL serial=68>
 <TAG>binary search tree</TAG>
 <APP>[cts|Wed Jan 13 17:34:43 2016][description|A tree whose values of left tree all less than root node, which is still less than right tree nodes. And whose left and right tree are also BSTs.]</APP>
 <LINK>66</LINK>
 </PNL>
-<PNL serial=43>
+<PNL serial=69>
+<TAG>bjhjyd.gov.cn</TAG>
+<APP>[CVURL|http:\s\sapply.bjhjyd.gov.cn][cts|Wed Feb 24 08:44:39 2016][memo|application code:\r\n0583104887765]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=70>
+<TAG>brand</TAG>
+<APP>[cts|Thu Mar 10 09:31:59 2016][description|An integration of figures, products needs and services.]</APP>
+<LINK>105</LINK>
+</PNL>
+<PNL serial=71>
+<TAG>bullet</TAG>
+<APP>[cts|Wed Mar  2 10:04:18 2016]</APP>
+<LINK>98 99 100 101 102</LINK>
+</PNL>
+<PNL serial=72>
 <TAG>call</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=44>
+<PNL serial=73>
+<TAG>cdot</TAG>
+<APP>[cts|Tue Mar  1 11:48:49 2016][description|·]</APP>
+<LINK>95</LINK>
+</PNL>
+<PNL serial=74>
+<TAG>check mark</TAG>
+<APP>[cts|Wed Mar  2 10:29:27 2016][description|√]</APP>
+<LINK>102</LINK>
+</PNL>
+<PNL serial=75>
 <TAG>component</TAG>
 <APP>[cts|20110301][description|A part of a system]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=45>
+<PNL serial=76>
 <TAG>concept</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=46>
+<PNL serial=77>
 <TAG>consistency</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>26 28 29</LINK>
 </PNL>
-<PNL serial=47>
+<PNL serial=78>
 <TAG>cpp algorithm</TAG>
 <APP>[cts|Sun Jan 10 11:59:00 2016][memo|#include&lt;algorithm&gt;\r\nsort(vec.begin(),vec.end());(默认是按升序排列,即从小到大).\r\nreverse(vec.begin(),vec.end());将元素翻转(在vector中，如果一个函数中需要两个迭代器，\r\n\r\n一般后一个都不包含.)]</APP>
 <LINK>57</LINK>
 </PNL>
-<PNL serial=48>
+<PNL serial=79>
 <TAG>cpp hashtable</TAG>
 <APP>[cts|Tue Jan 12 18:58:04 2016][memo|unordered_set&lt;int&gt; h;\r\nhash.insert(1);\r\nhash.find(1) != hasn.end()\r\n][mts|Tue Jan 12 20:17:42 2016]</APP>
 <LINK>64</LINK>
 </PNL>
-<PNL serial=49>
+<PNL serial=80>
 <TAG>cpp map</TAG>
 <APP>[cts|Tue Jan 12 20:22:53 2016][memo|map&lt;int,string&gt; m;\r\nm[1]=\q1\q;\s\sslow\r\nm.insert(map&lt;int,string&gt;::value_type(2,\q2\q)\s\sfast\r\nm.find(1) != m.end()\s\strue if found\r\nm.erase(1);]</APP>
 <LINK>65</LINK>
 </PNL>
-<PNL serial=50>
+<PNL serial=81>
 <TAG>cpp stack</TAG>
 <APP>[memo|stack&lt;int&gt; s;\r\ns.push(1);\r\na=s.top();\r\ns.pop();\r\ns.empty();]</APP>
 <LINK>58</LINK>
 </PNL>
-<PNL serial=51>
+<PNL serial=82>
 <TAG>cpp string</TAG>
 <APP>[cts|Tue Jan 12 14:24:03 2016][memo|string s;\r\nint size()\r\nint length()\r\nbool empty()\r\ns+=\q123\q;\r\ns==\q123\q]</APP>
 <LINK>59</LINK>
 </PNL>
-<PNL serial=52>
+<PNL serial=83>
 <TAG>cpp vector</TAG>
 <APP>[cts|Sun Jan 10 11:54:57 2016][memo|#include&lt;vector&gt;\r\nvector&lt;int&gt; v;\r\nv.push_back(1);\r\nv[0];\r\nvector&lt;int&gt;::iterator it;\r\nfor(it=vec.begin();it!=vec.end();it++)...\r\nvec.insert(vec.begin()+i,a);\r\nvec.erase(vec.begin()+2);\r\nv.erase(1,3);\r\nv.size();\r\nv.clear();]</APP>
 <LINK>56</LINK>
 </PNL>
-<PNL serial=53>
+<PNL serial=84>
 <TAG>creation</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=54>
+<PNL serial=85>
+<TAG>degree</TAG>
+<APP>[cts|Thu Apr 14 07:52:53 2016][description|°]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=86>
+<TAG>degree celcius</TAG>
+<APP>[cts|Tue Mar  1 11:52:46 2016][description|℃]</APP>
+<LINK>97</LINK>
+</PNL>
+<PNL serial=87>
 <TAG>deletion</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=55>
+<PNL serial=88>
+<TAG>diamond bullet</TAG>
+<APP>[cts|Wed Mar  2 10:05:12 2016][description|♦]</APP>
+<LINK>99</LINK>
+</PNL>
+<PNL serial=89>
 <TAG>douban</TAG>
 <APP>[cts|Tue Jan 19 17:05:15 2016][pass|douban----][username|wwnn31@hotmail.com]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=56>
+<PNL serial=90>
 <TAG>double click</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=57>
+<PNL serial=91>
 <TAG>drag</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=58>
+<PNL serial=92>
 <TAG>eetop</TAG>
 <APP>[CVURL|http:\s\swww.eetop.cn\s][cts|Tue Jan 19 10:12:43 2016]</APP>
 <LINK>80</LINK>
 </PNL>
-<PNL serial=59>
+<PNL serial=93>
 <TAG>elecfans</TAG>
 <APP>[CVURL|http:\s\swww.elecfans.com\s][cts|Tue Jan 19 10:09:17 2016][pass|elecfans----][username|wicknec]</APP>
 <LINK>78</LINK>
 </PNL>
-<PNL serial=60>
+<PNL serial=94>
 <TAG>emuch</TAG>
 <APP>[cts|Tue Jan 19 10:11:24 2016]</APP>
 <LINK>79</LINK>
 </PNL>
-<PNL serial=61>
+<PNL serial=95>
 <TAG>example</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=62>
+<PNL serial=96>
 <TAG>extension</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=63>
+<PNL serial=97>
 <TAG>fanyi.baidu.com</TAG>
 <APP>[CVURL|http:\s\sfanyi.baidu.com][class|webpage][cts|Wed Dec 23 15:42:36 2015][elements|[input|id=\pbaidu_translate_input\p][output|class=\poutput-bd\p]][trigger]</APP>
 <LINK>33</LINK>
 </PNL>
-<PNL serial=64>
+<PNL serial=98>
+<TAG>fraction</TAG>
+<APP>[cts|Tue Apr  5 15:50:44 2016][description|½]</APP>
+<LINK>123</LINK>
+</PNL>
+<PNL serial=99>
 <TAG>github</TAG>
 <APP>[CVURL|https:\s\sgithub.com\spypa\spip][class|login page][cts|Tue Feb  2 11:48:52 2016][description|An online repository site][help|[CVURL|https:\s\sguides.github.com\sactivities\shello-world\s]][pass|github----][user|wicknec]</APP>
 <LINK>82</LINK>
 </PNL>
-<PNL serial=65>
+<PNL serial=100>
 <TAG>greek alphabet</TAG>
 <APP>[cts|Tue Jan 12 15:52:10 2016]</APP>
-<LINK>62 63</LINK>
+<LINK>62 63 96 126</LINK>
 </PNL>
-<PNL serial=66>
+<PNL serial=101>
+<TAG>h-index</TAG>
+<APP>[cts|Wed Mar  9 20:26:33 2016]</APP>
+<LINK>104</LINK>
+</PNL>
+<PNL serial=102>
+<TAG>hbar</TAG>
+<APP>[cts|Tue Apr  5 15:51:45 2016][description|ħ]</APP>
+<LINK>124</LINK>
+</PNL>
+<PNL serial=103>
+<TAG>hosts</TAG>
+<APP>[CVURL|C:\\WINDOWS\\\system32\\drivers\\etc][cts|Tue Apr 19 08:50:41 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=104>
+<TAG>io module</TAG>
+<APP>[cts|Thu Feb  4 10:30:01 2016]</APP>
+<LINK>83 84</LINK>
+</PNL>
+<PNL serial=105>
 <TAG>its.pku.edu.cn</TAG>
 <APP>[!login|[1|#selenium init][2|#login via url]][cts|Tue Jan 19 08:05:14 2016][description|login page of pku cernet]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=67>
+<PNL serial=106>
 <TAG>keyPress</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=68>
+<PNL serial=107>
 <TAG>lambda</TAG>
 <APP>[cts|Tue Jan 12 15:51:42 2016][description|λ]</APP>
 <LINK>63</LINK>
 </PNL>
-<PNL serial=69>
+<PNL serial=108>
 <TAG>linear-time sorting</TAG>
 <APP>[cts|Mon Jan 18 13:13:25 2016][description|counting sort\r\nradix sort\r\nbucket sort]</APP>
 <LINK>72</LINK>
 </PNL>
-<PNL serial=70>
+<PNL serial=109>
 <TAG>link</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>4 12</LINK>
 </PNL>
-<PNL serial=71>
+<PNL serial=110>
 <TAG>link.consistency</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>29</LINK>
 </PNL>
-<PNL serial=72>
+<PNL serial=111>
 <TAG>login page</TAG>
 <APP>[cts|Wed Jan  6 13:36:54 2016][description|a web page that contains login controls]</APP>
 <LINK>54</LINK>
 </PNL>
-<PNL serial=73>
+<PNL serial=112>
 <TAG>maop</TAG>
-<APP>[!desk|M[\pmaop\p].busyWerk=False][!init|#the startup action for loading\r\nprint(\pStarted at %s\p%time.clock())\r\nM[\pmaop\p].Appoint(K.GetApp(\pGoOnXueShu\p))][cts|Tue Dec 22 17:21:26 2015][description|Minion-Automated Operating Program, aims to be a good helper, extending computer ability for better life\r\nA python module\r\nA python class\r\nA graphic interface]</APP>
+<APP>[!desk|M[\pmaop\p].busyWerk=False][!init|#the startup action for loading\r\nprint(\pStarted at %s\p%time.clock())\r\nM[\pmaop\p].Appoint(K.GetApp(\pGoOnXueShu\p))][cts|Tue Dec 22 17:21:26 2015][description|Minion-Automated Operating Program, aims to be a good helper, extending computer ability for better life\r\nA python module\r\nA python class\r\nA graphic interface][memo|transfer links:\r\nfirst, select the link you want to transfer\r\nthen, type:\r\nK.Transfer(M[\pmaop\p].mspaceExp.thisLink(),src,dst)\r\n\r\n]</APP>
 <LINK>32 52 76</LINK>
 </PNL>
-<PNL serial=74>
+<PNL serial=113>
 <TAG>math module</TAG>
 <APP>[!init|if \pmodules\p not in M:\r\n    M[\pmodules\p]=dict()\r\nif \pmath\p not in M[\pmodules\p]:\r\n    import math\r\n    M[\pmodules\p][\pmath\p]=math\r\n][cts|Wed Dec 30 15:16:51 2015]</APP>
 <LINK>45</LINK>
 </PNL>
-<PNL serial=75>
+<PNL serial=114>
+<TAG>math symbol</TAG>
+<APP>[cts|Wed Mar 16 10:38:15 2016]</APP>
+<LINK>114 115 122 123 125</LINK>
+</PNL>
+<PNL serial=115>
 <TAG>matplotlib</TAG>
 <APP>[!demo|import numpy as np\r\nimport matplotlib.pyplot as plt\r\n \r\nN = 5\r\nmenMeans = (20, 35, 30, 35, 27)\r\nmenStd =   (2, 3, 4, 1, 2)\r\n \r\nind = np.arange(N)  # the x locations for the groups\r\nwidth = 0.35       # the width of the bars\r\n \r\nfig, ax = plt.subplots()\r\nrects1 = ax.bar(ind, menMeans, width, color=\pr\p, yerr=menStd)\r\n \r\nwomenMeans = (25, 32, 34, 20, 25)\r\nwomenStd =   (3, 5, 2, 3, 3)\r\nrects2 = ax.bar(ind+width, womenMeans, width, color=\py\p, yerr=womenStd)\r\n \r\n# add some\r\nax.set_ylabel(\pScores\p)\r\nax.set_title(\pScores by group and gender\p)\r\nax.set_xticks(ind+width)\r\nax.set_xticklabels( (\pG1\p, \pG2\p, \pG3\p, \pG4\p, \pG5\p) )\r\n \r\nax.legend( (rects1[0], rects2[0]), (\pMen\p, \pWomen\p) )\r\n \r\ndef autolabel(rects):\r\n    # attach some text labels\r\n    for rect in rects:\r\n        height = rect.get_height()\r\n        ax.text(rect.get_x()+rect.get_width()\s2., 1.05*height, \p%d\p%int(height),\r\n                ha=\pcenter\p, va=\pbottom\p)\r\n \r\nautolabel(rects1)\r\nautolabel(rects2)\r\n \r\nplt.show()][CVURL|http:\s\smatplotlib.org\sapi\ssankey_api.html][cts|Wed Jan  6 13:17:54 2016][description|implements matlab functions in python]</APP>
 <LINK>53 60</LINK>
 </PNL>
-<PNL serial=76>
+<PNL serial=116>
 <TAG>member</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=77>
+<PNL serial=117>
 <TAG>minKnow.msdx</TAG>
 <APP>[cts|Wed Jan 13 18:17:39 2016][description|The manifestable part of wic]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=78>
+<PNL serial=118>
 <TAG>module</TAG>
 <APP>[cts|Tue Jan 19 08:35:04 2016]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=79>
+<PNL serial=119>
+<TAG>mspace</TAG>
+<APP>[cts|Fri Feb 19 13:33:37 2016][memo|.FindAllByContent\r\n]</APP>
+<LINK>89 93 94</LINK>
+</PNL>
+<PNL serial=120>
+<TAG>mspace.link</TAG>
+<APP>[cts|Sat Feb 27 10:55:38 2016][memo|properties:\r\n.id\r\n.src\r\n.dst\r\n.att\r\n.app\r\n.str #deprecated\r\n\r\nFunctions:\r\nToString\r\nFromString\r\nBrief\r\nsetAtt][mts|Sat Feb 27 10:57:56 2016]</APP>
+<LINK>94</LINK>
+</PNL>
+<PNL serial=121>
+<TAG>mspace.node</TAG>
+<APP>[cts|Sat Feb 27 10:55:11 2016][memo|properties:\r\n.tag\r\n.app\r\n.links\r\n\r\nfunctions:\r\nToString\r\nFromString\r\n][mts|Sat Feb 27 10:57:38 2016]</APP>
+<LINK>93</LINK>
+</PNL>
+<PNL serial=122>
 <TAG>mspaceExp</TAG>
 <APP>[cts|Tue Jan  5 11:01:29 2016][description|A python module\r\nA python class\r\nA graphic interface][memo|.LoadNodes([\pa\p,\pb\p])\r\n#add entries to node list\r\n.thisLink()\r\n\r\n.thisNode()\r\n\r\n]</APP>
 <LINK>52 74 77</LINK>
 </PNL>
-<PNL serial=80>
+<PNL serial=123>
 <TAG>mu</TAG>
 <APP>[cts|Wed Feb  3 09:24:55 2016][description|μ]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=81>
+<PNL serial=124>
+<TAG>music staff</TAG>
+<APP>[CVURL|http:\s\swww.sooopu.com\sForeign\s][Chinese|钢琴谱][cts|Tue Mar 15 11:50:08 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=125>
 <TAG>new link</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>12 13</LINK>
 </PNL>
-<PNL serial=82>
+<PNL serial=126>
 <TAG>new note</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>10 11</LINK>
 </PNL>
-<PNL serial=83>
+<PNL serial=127>
 <TAG>node</TAG>
 <APP>[!search|#search unconnected nodes\r\nl=[]\r\nfor n in K.nodes.values():\r\n    if len(n.links)==0:\r\n        l.append(n)\r\nM[\pmaop\p].mspaceExp.LoadNodes(l)][cts|Tue Jan  5 08:04:20 2016]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=84>
+<PNL serial=128>
+<TAG>noise spectral density</TAG>
+<APP>[cts|Thu Apr 14 15:13:51 2016][memo|pA\sHz1\s2]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=129>
 <TAG>note</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>5 10</LINK>
 </PNL>
-<PNL serial=85>
+<PNL serial=130>
 <TAG>note.consistency</TAG>
 <APP>[cts|20110301][illegal characters|a consistent node can\pt contain these characters in its text: \\n \\t \\r.][mts|20110301]</APP>
 <LINK>28</LINK>
 </PNL>
-<PNL serial=86>
+<PNL serial=131>
+<TAG>numerical</TAG>
+<APP>[cts|Fri May 13 14:24:44 2016][description|①②③]</APP>
+<LINK>134</LINK>
+</PNL>
+<PNL serial=132>
 <TAG>numpy</TAG>
-<APP>[cts|Tue Jan 12 14:49:01 2016][description|Let python deal with numbers like matlab]</APP>
+<APP>[cts|Tue Jan 12 14:49:01 2016][description|Let python deal with numbers like matlab][memo|np.loadtxt(filename)\r\n]</APP>
 <LINK>61</LINK>
 </PNL>
-<PNL serial=87>
+<PNL serial=133>
 <TAG>omega</TAG>
-<APP>[cts|Tue Jan  5 15:25:32 2016][description|Ω]</APP>
+<APP>[cts|Tue Jan  5 15:25:32 2016][description|Ωω]</APP>
 <LINK>62</LINK>
 </PNL>
-<PNL serial=88>
+<PNL serial=134>
 <TAG>os module</TAG>
-<APP>[cts|Sat Dec 26 12:50:42 2015]</APP>
+<APP>[!systeminfo|import os\r\ns=os.popen(\psysteminfo\p,\pr\p).read()\r\nprint(s.__repr__())][cts|Sat Dec 26 12:50:42 2015]</APP>
 <LINK>42</LINK>
 </PNL>
-<PNL serial=89>
+<PNL serial=135>
+<TAG>outlook mail</TAG>
+<APP>[CVURL|http:\s\swww.outlook.com][cts|Sat Mar 19 07:31:01 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=136>
 <TAG>overView</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>7</LINK>
 </PNL>
-<PNL serial=90>
+<PNL serial=137>
 <TAG>package</TAG>
 <APP>[cts|Tue Jan 12 14:47:22 2016][description|Software package\r\nLike libraries]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=91>
+<PNL serial=138>
 <TAG>parallel</TAG>
 <APP>[cts|Wed Jan  6 17:29:18 2016][symbol|∥]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=92>
+<PNL serial=139>
 <TAG>part</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=93>
+<PNL serial=140>
+<TAG>partial</TAG>
+<APP>[cts|Tue Apr  5 15:47:51 2016][description|∂]</APP>
+<LINK>122</LINK>
+</PNL>
+<PNL serial=141>
 <TAG>perpendicular</TAG>
 <APP>[cts|Wed Jan  6 17:27:57 2016][symbol|⊥]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=94>
+<PNL serial=142>
+<TAG>phi</TAG>
+<APP>[cts|Fri Apr  8 13:27:59 2016][description|φΦ\r\n]</APP>
+<LINK>126</LINK>
+</PNL>
+<PNL serial=143>
+<TAG>physical symbol</TAG>
+<APP>[cts|Tue Apr  5 15:52:49 2016]</APP>
+<LINK>124 125</LINK>
+</PNL>
+<PNL serial=144>
 <TAG>pi</TAG>
 <APP>[cts|Wed Feb  3 14:59:22 2016][description|Ππ]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=95>
+<PNL serial=145>
+<TAG>piano</TAG>
+<APP>[cts|Tue Mar 15 11:40:52 2016][description|skill as well as the instrument]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=146>
 <TAG>pip</TAG>
-<APP>[CVURL|https:\s\spypi.python.org\spypi\spip][cts|Tue Feb  2 11:50:05 2016][description|Pip is a modern, general purpose installation tool for python packages.]</APP>
+<APP>[CVURL|\qE:\\InnerFantasia\\WinPython-32bit-3.4.3.4\\WinPython Command Prompt.exe\q][cts|Tue Feb  2 11:50:05 2016][description|Pip is a modern, general purpose installation tool for python packages.][ref|https:\s\spypi.python.org\spypi\spip]</APP>
 <LINK>81 82</LINK>
 </PNL>
-<PNL serial=96>
+<PNL serial=147>
+<TAG>processing modules</TAG>
+<APP>[cts|Mon Mar 14 10:37:30 2016]</APP>
+<LINK>109 45 47 43</LINK>
+</PNL>
+<PNL serial=148>
 <TAG>propertyGrids</TAG>
 <APP>[cts|20110301]</APP>
 <LINK>8 9</LINK>
 </PNL>
-<PNL serial=97>
+<PNL serial=149>
 <TAG>proxy</TAG>
 <APP>[cts|20110228]</APP>
 <LINK>9</LINK>
 </PNL>
-<PNL serial=98>
+<PNL serial=150>
 <TAG>pyplot</TAG>
 <APP>[cts|Tue Jan 12 14:47:15 2016]</APP>
 <LINK>60</LINK>
 </PNL>
-<PNL serial=99>
+<PNL serial=151>
+<TAG>pyqtgraph</TAG>
+<APP>[cts|Mon Feb 15 09:25:58 2016][description|an easier-to-use graphic pachage than matplotlib.]</APP>
+<LINK>87</LINK>
+</PNL>
+<PNL serial=152>
 <TAG>python</TAG>
 <APP>[cts|Tue Dec 22 17:45:45 2015][description|A very convenient language]</APP>
-<LINK>32 38 81</LINK>
+<LINK>32 38 81 85 90</LINK>
 </PNL>
-<PNL serial=100>
+<PNL serial=153>
+<TAG>python docx</TAG>
+<APP>[cts|Mon Mar 14 10:01:22 2016][memo|pip install docx\r\ncorrect excpetions first\r\nutilizes xml document\r\n\r\n#search in a document:\r\nd=docx.opendocx(...)\r\ndocx.AdvSearch(d,regex) #will return all matches in a set][ref|http:\s\spython-docx.readthedocs.org\sen\slatest\s]</APP>
+<LINK>108</LINK>
+</PNL>
+<PNL serial=154>
+<TAG>python hash</TAG>
+<APP>[cts|Sat Feb 27 10:31:16 2016]</APP>
+<LINK>91</LINK>
+</PNL>
+<PNL serial=155>
+<TAG>python intrinsic function</TAG>
+<APP>[cts|Sat Feb 27 10:12:36 2016]</APP>
+<LINK>90 91</LINK>
+</PNL>
+<PNL serial=156>
+<TAG>python lambda</TAG>
+<APP>[cts|Fri Feb  5 12:18:37 2016][memo|y=lambda x:x**2]</APP>
+<LINK>86</LINK>
+</PNL>
+<PNL serial=157>
 <TAG>python module</TAG>
 <APP>[cts|Sat Dec 26 09:28:57 2015][memo|if \pmodules\p not in M:\r\n    M[\pmodules\p]=dict()\r\nif \pmath\p not in M[\pmodules\p]:\r\n    import math\r\n    M[\pmodules\p][\pmath\p]=math]</APP>
-<LINK>38 39 40 42 43 44 45 47 49 53 61 70</LINK>
+<LINK>38 92 109 110 111</LINK>
 </PNL>
-<PNL serial=101>
+<PNL serial=158>
+<TAG>python rule</TAG>
+<APP>[cts|Fri Feb  5 10:32:00 2016]</APP>
+<LINK>85 86</LINK>
+</PNL>
+<PNL serial=159>
+<TAG>python site package</TAG>
+<APP>[cts|Sat Feb 27 10:36:31 2016][description|The packages that are not included in original distributions]</APP>
+<LINK>92 40 49 87 108 61 53 116</LINK>
+</PNL>
+<PNL serial=160>
+<TAG>pywin32</TAG>
+<APP>[cts|Thu Mar 17 14:03:34 2016][description|A group of packages that enables control of windows OS.]</APP>
+<LINK>116</LINK>
+</PNL>
+<PNL serial=161>
 <TAG>random module</TAG>
 <APP>[!init|import random\r\nM[\prand\p]=random\r\nprint(M[\prand\p].random())][cts|Sun Dec 27 20:36:19 2015]</APP>
 <LINK>43</LINK>
 </PNL>
-<PNL serial=102>
+<PNL serial=162>
+<TAG>rare Chinese character</TAG>
+<APP>[cts|Thu Mar 24 16:07:05 2016][memo|旸]</APP>
+<LINK>120</LINK>
+</PNL>
+<PNL serial=163>
 <TAG>re module</TAG>
 <APP>[!init|if \pmodules\p not in M:\r\n    M[\pmodules\p]=dict()\r\nif \pre\p not in M[\pmodules\p]:\r\n    import re\r\n    M[\pmodules\p][\pre\p]=re\r\n][cts|Thu Dec 31 20:34:10 2015][description|module implementing regular expression][memo|re.match]</APP>
 <LINK>47 55</LINK>
 </PNL>
-<PNL serial=103>
+<PNL serial=164>
 <TAG>regular expression</TAG>
 <APP>[cts|Sun Jan 10 10:55:04 2016]</APP>
 <LINK>55</LINK>
 </PNL>
-<PNL serial=104>
+<PNL serial=165>
 <TAG>related object</TAG>
 <APP>[cts|Fri Dec 18 15:18:50 2015]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=105>
+<PNL serial=166>
 <TAG>replenish daily task</TAG>
 <APP>[cts|Sat Dec 19 13:16:07 2015][task|[1|M[\pwd\p].quit()\r\nprint(self.Say(\pBrowser is closed.\p))][2|M[\pmaop\p].Appoint(K.GetApp(\pGoOnXueShu\p))]][trigger|time.localtime().tm_hour==8]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=106>
+<PNL serial=167>
+<TAG>require</TAG>
+<APP>[cts|Mon Mar 14 10:49:11 2016][description|A--require-&gt;B\r\nmeans A need node B to function properly]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=168>
+<TAG>research journal</TAG>
+<APP>[!search|#search within all docxes in the folder for matches\r\n\r\nimport os\r\nimport docx\r\n\r\nthis=K.nodes[\presearch journal\p].app\r\nfs=[i for i in os.listdir(this[\pCVURL\p]) if i.endswith(\p.docx\p)]\r\nprint(\p%s docx files\p%len(fs))\r\np=this[\pCVURL\p]\r\n\r\nreg=K.nodes[\ptkinter\p].app(\p!askstring\p,{\ptitle\p:\pInput\p,\pprompt\p:\pWhat do you want to search?\p})\r\nprint(\psearching...\p)\r\nans=[]\r\nfor f in fs:\r\n    ff=os.path.join(p,f)\r\n    d=docx.opendocx(ff)\r\n    r=docx.AdvSearch(d,reg)\r\n    if r:\r\n        print(f,\p:\p,r)\r\n        ans.append(ff)\r\nprint(\psearch complete...%s entries found\p%len(ans))][CVURL|E:\\_TraumLand\\_Journal\\_Sent][cts|Mon Mar 14 10:53:37 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=169>
 <TAG>right click</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=107>
+<PNL serial=170>
+<TAG>scientific journal</TAG>
+<APP>[cts|Tue Apr 19 09:38:55 2016]</APP>
+<LINK>127 128 129</LINK>
+</PNL>
+<PNL serial=171>
 <TAG>selenium WebElement</TAG>
 <APP>[cts|Wed Dec 23 16:24:24 2015][description|The internal class for operation][memo|.click()\r\n.send_keys(\pabc\p)\r\nenter: {ENTER} or  ~][mts|Wed Dec 23 16:29:18 2015]</APP>
 <LINK>35</LINK>
 </PNL>
-<PNL serial=108>
+<PNL serial=172>
 <TAG>selenium web driver</TAG>
-<APP>[!findelement|#you can use M[\pwd\p].find_element() method\r\n#need to work out a calling method][!init|#initiate the web driver to M[\pwd\p]\r\nfrom selenium import webdriver\r\no=webdriver.ChromeOptions()\r\no.add_argument(\puser-data-dir=C:\sUsers\sH2O\sAppData\sLocal\sGoogle\sChrome\sUser Data\p)\r\nM[\pwd\p]=webdriver.Chrome(chrome_options=o)\r\ntime.sleep(2)][!keys|from selenium.webdriver.common.keys import Keys\r\nM[\pt\p]=Keys.ENTER][!quit|#quit the web driver before start a new one\r\nM[\pwd\p].quit()][!switch|#switch to last page\r\nM[\pwd\p].switch_to.window(M[\pwd\p].window_handles[-1])][brief|.find_elements_by_class_name\r\n.find_element][cts|Sat Dec 19 13:03:07 2015][description|Allows to control web browser with python\r\nBeware that once you operate the window by hand, you will get errors controlling it by code.]</APP>
+<APP>[!findelement|#you can use M[\pwd\p].find_element() method\r\n#need to work out a calling method][!init|#initiate the web driver to M[\pwd\p]\r\nfrom selenium import webdriver\r\no=webdriver.ChromeOptions()\r\no.add_argument(\puser-data-dir=C:\sUsers\sH2O\sAppData\sLocal\sGoogle\sChrome\sUser Data\p)\r\nM[\pwd\p]=webdriver.Chrome(chrome_options=o)\r\ntime.sleep(2)][!keys|from selenium.webdriver.common.keys import Keys\r\nM[\pt\p]=Keys.ENTER][!newtab|from selenium.webdriver.common.keys import Keys\r\nimport time\r\nM[\pwd\p].find_element_by_tag_name(\pbody\p).send_keys(Keys.CONTROL+\pt\p)\r\nprint(Keys.CONTROL+\pt\p)\r\ntime.sleep(1)\r\nM[\pwd\p].switch_to.window(M[\pwd\p].window_handles[-1])][!quit|#quit the web driver before start a new one\r\nM[\pwd\p].quit()][!switch|#switch to last page\r\nM[\pwd\p].switch_to.window(M[\pwd\p].window_handles[-1])][brief|.find_elements_by_class_name\r\n.find_element][cts|Sat Dec 19 13:03:07 2015][description|Allows to control web browser with python\r\nBeware that once you operate the window by hand, you will get errors controlling it by code.][memo]</APP>
 <LINK>35 40</LINK>
 </PNL>
-<PNL serial=109>
+<PNL serial=173>
 <TAG>single click</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=110>
+<PNL serial=174>
 <TAG>software</TAG>
 <APP>[cts|Sat Dec 26 12:44:37 2015]</APP>
-<LINK>41</LINK>
+<LINK>41 117 118 119</LINK>
 </PNL>
-<PNL serial=111>
+<PNL serial=175>
 <TAG>sorting</TAG>
 <APP>[cts|Mon Jan 18 13:12:23 2016]</APP>
 <LINK>71 72</LINK>
 </PNL>
-<PNL serial=112>
+<PNL serial=176>
+<TAG>special symbol</TAG>
+<APP>[cts|Tue Mar  1 11:50:53 2016][description|The symbols that can not be directly typed by a keyboard.]</APP>
+<LINK>95 96 97 98 106 114 132 134</LINK>
+</PNL>
+<PNL serial=177>
+<TAG>square root</TAG>
+<APP>[cts|Wed Mar 16 10:37:27 2016][description|√]</APP>
+<LINK>115</LINK>
+</PNL>
+<PNL serial=178>
 <TAG>str</TAG>
 <APP>[!test|for i in \p123452356\p:\r\n    print(i)][cts|Sun Jan 17 19:50:10 2016]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=113>
+<PNL serial=179>
 <TAG>subset</TAG>
 <APP>[cts|Fri Jan 15 08:36:47 2016]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=114>
+<PNL serial=180>
 <TAG>syntax</TAG>
 <APP>[cts|20110301]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=115>
+<PNL serial=181>
+<TAG>system modules</TAG>
+<APP>[cts|Mon Mar 14 10:37:40 2016]</APP>
+<LINK>111 70 84 42 44</LINK>
+</PNL>
+<PNL serial=182>
 <TAG>threading</TAG>
 <APP>[cts|Fri Jan 15 08:38:07 2016][memo|threading.activeCount()\r\n#number of threads\r\n.enumerate()\r\n\r\n.Lock() #return lock object]</APP>
 <LINK>70</LINK>
 </PNL>
-<PNL serial=116>
+<PNL serial=183>
 <TAG>time module</TAG>
 <APP>[!sec2str|#convert seconds to days-hours-minutes-seconds\r\n#args is float seconds\r\narg=args\r\nss=arg%60\r\narg=(arg-ss)\s60\r\nmm=arg%60\r\narg=(arg-mm)\s60\r\nhh=arg%24\r\ndd=(arg-hh)\s24\r\nans=\p%s day %s hour %s min %s sec\p%(dd,hh,mm,ss)\r\nprint(ans)][!uptime|#calculates up time\r\n#\r\nans=K.GetApp(\ptime module\p)(\p!sec2str\p,time.clock())][cts|Wed Dec 30 14:48:20 2015][description|Handles time related tasks]</APP>
 <LINK>44</LINK>
 </PNL>
-<PNL serial=117>
+<PNL serial=184>
 <TAG>timed task</TAG>
 <APP>[!test|#the test will appoint a timed task\r\n#to print time on zero second\r\nM[\pmaop\p].Appoint(K.GetApp(\ptimed task\p))][cts|Sat Dec 19 13:21:37 2015][task|print(\pThis is %s\p%time.ctime())][trigger|time.localtime().tm_sec==0]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=118>
+<PNL serial=185>
+<TAG>tkinter</TAG>
+<APP>[!askquestion|import tkinter as tk\r\nfrom tkinter import messagebox\r\n\r\nroot=tk.Tk()\r\nroot.withdraw()\r\nans=messagebox.askquestion(\pQuestion\p,\pDo you see?\p)\r\nprint(ans)][!askstring|#args: title, prompt\r\nimport tkinter as tk\r\nfrom tkinter import simpledialog\r\n\r\nif \pargs\p not in dir():\r\n    args={\ptitle\p:\pdemo\p, \pprompt\p:\pinput some text\p}\r\n\r\nroot=tk.Tk()\r\nroot.withdraw()\r\nans=simpledialog.askstring(args[\ptitle\p],args[\pprompt\p])\r\nprint(ans)][!choosecolor|import tkinter as tk\r\nfrom tkinter import colorchooser\r\n\r\nroot=tk.Tk()\r\nroot.withdraw()\r\nans=colorchooser.askcolor()\r\nprint(ans)][cts|Mon Mar 14 10:45:05 2016][memo|a relatively good help:\r\nhttp:\s\swww-acc.kek.jp\skekb\scontrol\sActivity\sPython\sTkIntro\sintroduction\sintro08.htm]</APP>
+<LINK>112</LINK>
+</PNL>
+<PNL serial=186>
 <TAG>tuple</TAG>
 <APP>[!test|t=(1,2,3)\r\nt[0]=4\r\nprint(t)][cts|Mon Jan 18 08:58:00 2016]</APP>
 <LINK></LINK>
 </PNL>
-<PNL serial=119>
+<PNL serial=187>
+<TAG>university</TAG>
+<APP>[cts|Fri Apr 22 08:26:00 2016]</APP>
+<LINK>133</LINK>
+</PNL>
+<PNL serial=188>
+<TAG>waFile</TAG>
+<APP>[cts|Mon Mar 14 10:50:51 2016][memo|.uigetfullfile(basedir=\p\p)\r\n\r\n]</APP>
+<LINK>113</LINK>
+</PNL>
+<PNL serial=189>
+<TAG>web of science</TAG>
+<APP>[CVURL|http:\s\sapps.webofknowledge.com\sUA_GeneralSearch_input.do?product=UA&amp;SID=2FmhNDZjZeXhCjMwkPZ&amp;search_mode=GeneralSearch][cts|Wed Mar  9 20:24:23 2016]</APP>
+<LINK>103 104 107</LINK>
+</PNL>
+<PNL serial=190>
 <TAG>web page</TAG>
 <APP>[cts|Wed Jan  6 13:36:09 2016][description|that can be opened with a web browser]</APP>
 <LINK>54 68</LINK>
 </PNL>
-<PNL serial=120>
+<PNL serial=191>
 <TAG>webbrowser</TAG>
 <APP>[!get|#args is url\r\nimport webbrowser\r\n#help(webbrowser)\r\nwebbrowser.open(args)]</APP>
 <LINK>39</LINK>
 </PNL>
-<PNL serial=121>
+<PNL serial=192>
 <TAG>website</TAG>
 <APP>[cts|Fri Jan 15 07:39:16 2016][description|A collection of webpages run by one company]</APP>
-<LINK>68 69 78 79 80</LINK>
+<LINK>68 69 78 79 80 103</LINK>
 </PNL>
-<PNL serial=122>
+<PNL serial=193>
+<TAG>wiChart.py</TAG>
+<APP>[cts|Thu Mar 31 15:37:16 2016][memo]</APP>
+<LINK>121</LINK>
+</PNL>
+<PNL serial=194>
+<TAG>wicDIG</TAG>
+<APP>[CVURL|D:\\Green Program Files\\wicDIG\\wicDIG.exe][cts|Thu May 26 15:08:07 2016]</APP>
+<LINK></LINK>
+</PNL>
+<PNL serial=195>
 <TAG>wizNote web</TAG>
 <APP>[CVURL|https:\s\snote.wiz.cn][cts|Fri Dec 25 08:07:20 2015]</APP>
 <LINK>37</LINK>
 </PNL>
-<PNL serial=123>
+<PNL serial=196>
 <TAG>xueshu.baidu.com</TAG>
 <APP>[cts|Wed Dec 23 15:48:40 2015]</APP>
 <LINK>34 46 51</LINK>
@@ -934,7 +1299,7 @@
 </PLL>
 <PLL>
 <ID>39</ID>
-<A>python module</A>
+<A>GUI modules</A>
 <B>webbrowser</B>
 <ATTRIBUTE>member</ATTRIBUTE>
 <lTAG>[cts|Sat Dec 26 09:31:07 2015]</lTAG>
@@ -942,7 +1307,7 @@
 </PLL>
 <PLL>
 <ID>40</ID>
-<A>python module</A>
+<A>python site package</A>
 <B>selenium web driver</B>
 <ATTRIBUTE>member</ATTRIBUTE>
 <lTAG>[cts|Sat Dec 26 09:31:32 2015]</lTAG>
@@ -958,7 +1323,7 @@
 </PLL>
 <PLL>
 <ID>42</ID>
-<A>python module</A>
+<A>system modules</A>
 <B>os module</B>
 <ATTRIBUTE>member</ATTRIBUTE>
 <lTAG>[cts|Sat Dec 26 12:52:39 2015]</lTAG>
@@ -966,7 +1331,7 @@
 </PLL>
 <PLL>
 <ID>43</ID>
-<A>python module</A>
+<A>processing modules</A>
 <B>random module</B>
 <ATTRIBUTE>member</ATTRIBUTE>
 <lTAG>[cts|Sun Dec 27 20:36:33 2015]</lTAG>
@@ -974,7 +1339,7 @@
 </PLL>
 <PLL>
 <ID>44</ID>
-<A>python module</A>
+<A>system modules</A>
 <B>time module</B>
 <ATTRIBUTE>member</ATTRIBUTE>
 <lTAG>[cts|Wed Dec 30 14:48:50 2015]</lTAG>
@@ -982,7 +1347,7 @@
 </PLL>
 <PLL>
 <ID>45</ID>
-<A>python module</A>
+<A>processing modules</A>
 <B>math module</B>
 <ATTRIBUTE>member</ATTRIBUTE>
 <lTAG>[cts|Wed Dec 30 15:16:59 2015]</lTAG>
@@ -998,7 +1363,7 @@
 </PLL>
 <PLL>
 <ID>47</ID>
-<A>python module</A>
+<A>processing modules</A>
 <B>re module</B>
 <ATTRIBUTE>member</ATTRIBUTE>
 <lTAG>[cts|Thu Dec 31 20:35:27 2015]</lTAG>
@@ -1014,7 +1379,7 @@
 </PLL>
 <PLL>
 <ID>49</ID>
-<A>python module</A>
+<A>python site package</A>
 <B>PyQt4</B>
 <ATTRIBUTE>member</ATTRIBUTE>
 <lTAG>[cts|Mon Jan  4 09:39:52 2016]</lTAG>
@@ -1046,7 +1411,7 @@
 </PLL>
 <PLL>
 <ID>53</ID>
-<A>python module</A>
+<A>python site package</A>
 <B>matplotlib</B>
 <ATTRIBUTE>member</ATTRIBUTE>
 <lTAG>[cts|Wed Jan  6 13:19:13 2016]</lTAG>
@@ -1110,7 +1475,7 @@
 </PLL>
 <PLL>
 <ID>61</ID>
-<A>python module</A>
+<A>python site package</A>
 <B>numpy</B>
 <ATTRIBUTE>member</ATTRIBUTE>
 <lTAG>[cts|Tue Jan 12 14:49:21 2016]</lTAG>
@@ -1182,7 +1547,7 @@
 </PLL>
 <PLL>
 <ID>70</ID>
-<A>python module</A>
+<A>system modules</A>
 <B>threading</B>
 <ATTRIBUTE>member</ATTRIBUTE>
 <lTAG>[cts|Fri Jan 15 08:38:23 2016]</lTAG>
@@ -1282,6 +1647,438 @@
 <B>github</B>
 <ATTRIBUTE></ATTRIBUTE>
 <lTAG>[cts|Tue Feb  2 12:01:45 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>83</ID>
+<A>io module</A>
+<B>StringIO</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Thu Feb  4 10:30:35 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>84</ID>
+<A>system modules</A>
+<B>io module</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Thu Feb  4 10:31:06 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>85</ID>
+<A>python</A>
+<B>python rule</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|Fri Feb  5 10:32:18 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>86</ID>
+<A>python rule</A>
+<B>python lambda</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Fri Feb  5 12:18:59 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>87</ID>
+<A>python site package</A>
+<B>pyqtgraph</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Mon Feb 15 09:27:00 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>88</ID>
+<A>QtGui</A>
+<B>QGraphicsSceneMouseEvent</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|Fri Feb 19 15:10:37 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>89</ID>
+<A>WalArt</A>
+<B>mspace</B>
+<ATTRIBUTE>module</ATTRIBUTE>
+<lTAG>[cts|Wed Feb 24 08:45:40 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>90</ID>
+<A>python</A>
+<B>python intrinsic function</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Sat Feb 27 10:30:49 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>91</ID>
+<A>python intrinsic function</A>
+<B>python hash</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Sat Feb 27 10:31:57 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>92</ID>
+<A>python module</A>
+<B>python site package</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Sat Feb 27 10:37:15 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>93</ID>
+<A>mspace</A>
+<B>mspace.node</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Sat Feb 27 10:55:31 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>94</ID>
+<A>mspace</A>
+<B>mspace.link</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Sat Feb 27 10:55:44 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>95</ID>
+<A>special symbol</A>
+<B>cdot</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Mar  1 11:51:12 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>96</ID>
+<A>special symbol</A>
+<B>greek alphabet</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Mar  1 11:51:50 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>97</ID>
+<A>special symbol</A>
+<B>degree celcius</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Mar  1 11:53:08 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>98</ID>
+<A>special symbol</A>
+<B>bullet</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Mar  2 10:04:32 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>99</ID>
+<A>bullet</A>
+<B>diamond bullet</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Mar  2 10:05:31 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>100</ID>
+<A>bullet</A>
+<B>big solid circle</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Mar  2 10:28:03 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>101</ID>
+<A>bullet</A>
+<B>big wire circle</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Mar  2 10:28:43 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>102</ID>
+<A>bullet</A>
+<B>check mark</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Mar  2 10:29:37 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>103</ID>
+<A>website</A>
+<B>web of science</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Mar  9 20:25:59 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>104</ID>
+<A>h-index</A>
+<B>web of science</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Wed Mar  9 20:26:50 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>105</ID>
+<A>brand</A>
+<B>PhD comics</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Thu Mar 10 09:33:16 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>106</ID>
+<A>special symbol</A>
+<B>arrow</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Fri Mar 11 09:16:59 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>107</ID>
+<A>web of science</A>
+<B>Journal Citation Reports</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Fri Mar 11 09:52:16 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>108</ID>
+<A>python site package</A>
+<B>python docx</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Mon Mar 14 10:01:54 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>109</ID>
+<A>python module</A>
+<B>processing modules</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Mon Mar 14 10:39:13 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>110</ID>
+<A>python module</A>
+<B>GUI modules</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Mon Mar 14 10:39:20 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>111</ID>
+<A>python module</A>
+<B>system modules</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Mon Mar 14 10:39:26 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>112</ID>
+<A>GUI modules</A>
+<B>tkinter</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Mon Mar 14 10:45:22 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>113</ID>
+<A>WalArt</A>
+<B>waFile</B>
+<ATTRIBUTE>module</ATTRIBUTE>
+<lTAG>[cts|Mon Mar 14 10:51:30 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>114</ID>
+<A>special symbol</A>
+<B>math symbol</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Mar 16 10:48:34 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>115</ID>
+<A>math symbol</A>
+<B>square root</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Mar 16 10:49:09 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>116</ID>
+<A>python site package</A>
+<B>pywin32</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Thu Mar 17 14:06:23 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>117</ID>
+<A>software</A>
+<B>Mendeley</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Mon Mar 21 10:16:48 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>118</ID>
+<A>software</A>
+<B>FormatFactory</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Mon Mar 21 10:17:14 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>119</ID>
+<A>software</A>
+<B>PhotoShop</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Mon Mar 21 10:17:28 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>120</ID>
+<A>Chinese character</A>
+<B>rare Chinese character</B>
+<ATTRIBUTE>part</ATTRIBUTE>
+<lTAG>[cts|Thu Mar 24 16:08:04 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>121</ID>
+<A>WalArt</A>
+<B>wiChart.py</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Thu Mar 31 15:37:36 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>122</ID>
+<A>math symbol</A>
+<B>partial</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Apr  5 15:50:20 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>123</ID>
+<A>math symbol</A>
+<B>fraction</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Apr  5 15:51:13 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>124</ID>
+<A>physical symbol</A>
+<B>hbar</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Apr  5 15:53:03 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>125</ID>
+<A>physical symbol</A>
+<B>math symbol</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Apr  5 15:53:16 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>126</ID>
+<A>greek alphabet</A>
+<B>phi</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Fri Apr  8 13:28:39 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>127</ID>
+<A>scientific journal</A>
+<B>Nano Letters</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Apr 19 09:39:25 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>128</ID>
+<A>scientific journal</A>
+<B>ACS Nano</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Apr 19 09:39:32 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>129</ID>
+<A>scientific journal</A>
+<B>Nature journals</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Apr 19 09:40:47 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>130</ID>
+<A>Nature journals</A>
+<B>Nature nanotechnology</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Apr 19 09:41:05 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>131</ID>
+<A>Nature journals</A>
+<B>Nature communcations</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Tue Apr 19 09:43:00 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>132</ID>
+<A>special symbol</A>
+<B>Chinese character</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Wed Apr 20 16:33:07 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>133</ID>
+<A>university</A>
+<B>TopUniversities</B>
+<ATTRIBUTE></ATTRIBUTE>
+<lTAG>[cts|Fri Apr 22 08:29:24 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>134</ID>
+<A>special symbol</A>
+<B>numerical</B>
+<ATTRIBUTE>member</ATTRIBUTE>
+<lTAG>[cts|Fri May 13 14:25:26 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>135</ID>
+<A>QtGui</A>
+<B>QWidget</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|Fri May 20 14:03:01 2016]</lTAG>
+<STR>1</STR>
+</PLL>
+<PLL>
+<ID>136</ID>
+<A>QtGui</A>
+<B>QPushButton</B>
+<ATTRIBUTE>component</ATTRIBUTE>
+<lTAG>[cts|Fri May 20 14:05:20 2016]</lTAG>
 <STR>1</STR>
 </PLL>
 </PLLbank>

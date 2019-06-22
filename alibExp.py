@@ -23,8 +23,22 @@ Revisions
 151229 added *GetSelectedText*
 160112 change data display to waText.Brief
 160113 change non-editing to read only to allow scroll
+160309 fixed save failure by explore root after lock.
+171204 updated alibExp.GetSelectedText to return the path of selected node
+    fixed bug in reeWidget.ItemToPath
+180102 migrate to be compatible with PyQt5
 """
-
+try:
+    from PyQt4 import QtCore
+    from PyQt4.QtCore import QTimer
+    from PyQt4.QtGui import QApplication, QWidget
+except ImportError or ModuleNotFoundError:
+    print('PyQt4 module not found, try using PyQt5')
+    from PyQt5 import QtCore
+    from PyQt5.QtWidgets import QApplication, QWidget
+    from PyQt5.QtCore import QTimer
+from WalArt.gui.QtGui4or5 import QtGuiFinder
+QtGui=QtGuiFinder()
 
 # -*- coding: utf-8 -*-
 
@@ -34,7 +48,7 @@ Revisions
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt4 import QtCore, QtGui
+
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -173,6 +187,8 @@ path can also be a list of strings
             fl.append(p.text(0))
             p=p.parent()
         fl.reverse()
+        return fl
+        
 
     def RemoveNodeSync(self,item):
         '''Remove the node from both the view and the alib
@@ -268,8 +284,10 @@ class alibExp(object):
 
         self.retranslateUi(Dialog)
 
-        QtCore.QObject.connect(self.treeWidget, QtCore.SIGNAL(_fromUtf8("clicked(QModelIndex)")),
-                               self.itemSelected)
+        #QtCore.QObject.connect(self.treeWidget, QtCore.SIGNAL(_fromUtf8("clicked(QModelIndex)")),
+        #                       self.itemSelected)
+        self.treeWidget.clicked.connect(self.itemSelected)
+        
         self.plainTextEdit.setAcceptDrops(True)
         
         self.treeWidget.setDragDropMode(QtGui.QAbstractItemView.InternalMove)
@@ -277,14 +295,18 @@ class alibExp(object):
         self.treeWidget.setFrameShape(QtGui.QFrame.Box)
 
   
-        QtCore.QObject.connect(self.btLock, QtCore.SIGNAL(_fromUtf8("clicked()")),
-                               self.btLockClicked)
-        QtCore.QObject.connect(self.btMinus, QtCore.SIGNAL(_fromUtf8("clicked()")),
-                               self.btMinusClicked)
-        QtCore.QObject.connect(self.btAdd, QtCore.SIGNAL(_fromUtf8("clicked()")),
-                               self.btAddClicked)
-        QtCore.QObject.connect(self.btRoot, QtCore.SIGNAL(_fromUtf8("clicked()")),
-                               self.btRootClicked)
+        #QtCore.QObject.connect(self.btLock, QtCore.SIGNAL(_fromUtf8("clicked()")),self.btLockClicked)
+        self.btLock.clicked.connect(self.btLockClicked)
+        
+        #QtCore.QObject.connect(self.btMinus, QtCore.SIGNAL(_fromUtf8("clicked()")),self.btMinusClicked)
+        self.btMinus.clicked.connect(self.btMinusClicked)
+        
+        #QtCore.QObject.connect(self.btAdd, QtCore.SIGNAL(_fromUtf8("clicked()")),self.btAddClicked)
+        self.btAdd.clicked.connect(self.btAddClicked)
+        
+        #QtCore.QObject.connect(self.btRoot, QtCore.SIGNAL(_fromUtf8("clicked()")),self.btRootClicked)
+        self.btRoot.clicked.connect(self.btRootClicked)
+        
         self.treeWidget.dropEvent=self.itemDropped
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
@@ -358,6 +380,7 @@ class alibExp(object):
                     si.parent().data(1,-1)[k]=v
                 self.treeWidget.Load(self.treeWidget.data)
                 self.Message('Change saved')
+                self.btRootClicked()
         else:
             if len(si)==0:
                 self.Message('Begin editing whole alib')
@@ -449,10 +472,11 @@ it is the data of selected treenode, or the whole alib if nothing is selected
         else:
             return self.treeWidget.data
     def GetSelectedText(self):
-        '''Similar as GetCurrent'''
+        '''Similar as GetCurrent, but returns the path of selected node'''
         si=self.treeWidget.selectedItems()
         if len(si)>0:
-            return si[0].text(0)
+            return '|'.join(self.treeWidget.ItemToPath(si[0]))
+            
         else:
             return ''
         

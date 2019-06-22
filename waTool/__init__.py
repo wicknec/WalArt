@@ -19,6 +19,8 @@ Revisions for package main file:
 151121 changed *GoToWork* to *Go*, the simple the better
 151219 modified *Assign*
 160131 add tasklock
+161119 add WhatRuDoing
+180326 add minion.rounds to monitor execution
 '''
 __all__ = ['minion','SysOp']
 
@@ -62,6 +64,8 @@ FUNCTIONS:
         #Enters standby when all tasks are done instead of terminating
         #=False for no standby, =float for seconds to wait until next round
         self.standby=False
+        
+        self.rounds=0 #a counter for how many rounds of execution this minion had gone through
 
         if not self.quiet:
             print(self.Say("Hello!"))
@@ -95,6 +99,7 @@ FUNCTIONS:
         '''This function is executed automatically on self.start()
 '''
         while self.summoned>0:
+            self.rounds+=1
             if len(self.task)>0:
                 self.DoTask(self.PopTask())
                 if len(self.task)==0 and len(self.ctask)!=0 and self.summoned:
@@ -136,7 +141,6 @@ FUNCTIONS:
             else:
                 exec(t)
         except Exception as e:
-            import sys
             import traceback
             traceback.print_exc()
         if self.reflex>0:
@@ -167,4 +171,12 @@ If s is a string
         t=self.task.pop(0)
         self.tasklock.release()
         return t
-        
+    
+    def WhatRuDoing(self):
+        '''Print the stack of this minion
+        '''
+        import traceback
+        import sys
+        print(self)
+        traceback.print_stack(sys._current_frames()[self.ident])
+        #print()

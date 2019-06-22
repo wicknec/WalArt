@@ -15,23 +15,33 @@ Revisions
 151104 LoadText, SaveText
 151209 *Find*,*Join*
 160202 *uigetfullfile*
+180211 updated .Join to support multiple paths, conform with os.path.join
+180315 added uigetfulldir
+180317 modifed Join to account for /
+    fixed uigetfulldir
+180318 fixed Join
+180320 fixed Join again, 3.4.3 does not support (path,*name)
+180408 use io instead of codecs for automatic \n conversion, also specify utf-8
 """
 import os
 import codecs
 def LoadText(filename):
         '''Load text from *filename*
     '''
-        f=codecs.open(filename, 'r')
-        s=f.read()
-        f.close()
+        #f=codecs.open(filename, 'r')
+        import io
+        with io.open(filename,'r',encoding='utf-8') as f:
+                s=f.read()
         return s
 
 def SaveText(filename,s):
         '''Save string *s* to filename
 '''
-        f=codecs.open(filename, 'w')
-        s=f.write(s)
-        f.close()
+        #f=codecs.open(filename, 'w')
+        import io
+        with io.open(filename,'w',encoding='utf-8') as f:
+                s=f.write(s)
+
 def GetFilename(fullfile):
         '''Get the file name from *fullfile* name
 '''
@@ -68,10 +78,15 @@ if not found, return None
                                                 return os.path.join(d2,name)
         return None
                                         
-def Join(path,name):
+def Join(path,*name):
         ''' os.path.join
 '''
-        return os.path.join(path,name)
+        if '/' in path:
+            names=[path]
+            names.extend(name)
+            return '/'.join(names)
+        else:
+            return os.path.join(path,*name)
 import tkinter as tk
 from tkinter import filedialog
 def uigetfullfile(basefilename=''):
@@ -86,3 +101,13 @@ def uigetfullfile(basefilename=''):
                 file=filedialog.askopenfilenames()
         fns=root.tk.splitlist(file)
         return fns
+    
+def uigetfulldir(basename=''):
+        #d=GetFolderName(basefilename)
+        root=tk.Tk()
+        root.withdraw()
+        if basename:
+                pth=filedialog.askdirectory(initialdir=basename)
+        else:
+                pth=filedialog.askdirectory()
+        return pth

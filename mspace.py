@@ -25,9 +25,26 @@ Revisions
 151229 fixed *Call*
 151229 fixed *Call* to return ans
 160114 removed *Call* moved it to alib
+160215 fixed *FindNodesByName* ignorecase, re.search
+160223 *FindAllByContent*
+160226 *GetLink*, *Transfer*
+161106 fixed RemoveLink blankId.append
+161119 add ModAtt
+170220 fixed NewLink, att does not exist
+171116 add mspace.f 
+171126 add local this as the app
+180204 fixed mspace.f, add KeyError to indicate target not found, more clarity
+180331 corrected mspace.f to use globals. originally f uses M as globals,
+    this would either block the builtins or add unwanted builtins to M.
+180518 add obj argument to mspace.f to facilitate class functions
+    add mspace.inflate, .deflate to convert alib to more usable form
+    modified .inflate to create a copy, avoiding changing the original
+181103 completed mspace.debue function
+181126 fixed debue and deflate to have right output
+181127 updated inflate to recur over all leaf nodes
 """
 
-from WalArt import alib,waText,waFile
+from WalArt import alib,waText
 
 import re,time
     
@@ -112,7 +129,11 @@ class node(object):
         self.tag=Unescape(self.tag)
         t,cur=waText.SkipUntil(s,'<APP>')
         t,cur=waText.ReadBrackets(s,('<APP>','</APP>'),cur)
-        self.app=alib().FromString(Unescape(t))
+        try:
+            self.app=alib().FromString(Unescape(t))
+        except ValueError as e:
+            print('When reading node{%s}'%self.tag)
+            raise e
         t,cur=waText.SkipUntil(s,'<LINK>')
         t,cur=waText.ReadBrackets(s,('<LINK>','</LINK>'),cur)
         if t=='':
@@ -163,7 +184,11 @@ class link(object):
         self.att=Unescape(t)
         t,cur=waText.SkipUntil(s,'<lTAG>')
         t,cur=waText.ReadBrackets(s,('<lTAG>','</lTAG>'),cur)
-        self.app=alib().FromString(Unescape(t))
+        try:
+            self.app=alib().FromString(Unescape(t))
+        except ValueError as e:
+            print('When reading link[%d]'%self.id)
+            raise e
         t,cur=waText.SkipUntil(s,'<STR>')
         t,cur=waText.ReadBrackets(s,('<STR>','</STR>'),cur)
         self.str=int(t)
@@ -262,6 +287,13 @@ the return is one of:
         except Exception:
             pass
         return 'none'
+    def GetLink(self,link):
+        '''
+'''
+        if isinstance(link,int):
+            return self.links[int]
+        else:
+            return link
         
     def Check(self):
         '''Returns true if the mspace is good
@@ -307,26 +339,14 @@ A good mspace:
         return LinkValid and NodeValid
 #It is suggested that you use the following methods to access mspace to guarantee
     #data integrity
-    def GetApp(self,x):
-        '''Get the attached alib for the input str or int
-if none is found, return None
-'''
-        try:
-            if isinstance(x,str):
-                return self.nodes[x].app
-            else:
-                return self.links[x].app
-        except Exception:
-            pass
-        return None
-
     def FindNodesByName(self,s, countLimit=None):
-        '''Return the nodes whose name matches s in terms of re
+        '''Return the nodes whose name matches s in terms of re.search
+ignore case
 '''
-        p=re.compile(s)
+        p=re.compile(s,re.IGNORECASE)
         result=[]
         for n in self.nodes:
-            if re.match(p,n):
+            if re.search(p,n):
                 if countLimit==None or len(result)<countLimit:
                     result.append(self.nodes[n])
                 else:
@@ -363,7 +383,7 @@ if none is found, return None
         if dst not in self.nodes:
             raise ValueError('dst Node does not exist')
         if att!='' and att not in self.nodes:
-            raise ValueError('dst Node does not exist')
+            raise ValueError('att Node does not exist')
         if len(self.blankId)>0:
             i=self.blankId.pop()
             l=self.links[i]
@@ -378,6 +398,7 @@ if none is found, return None
         l.app=alib().FromString('[cts|%s]'%time.ctime())
         self.nodes[src].links.append(i)
         self.nodes[dst].links.append(i)
+        print('Link{%s} %s added'%(l.id,l))
     def RemoveLink(self,l):
         '''Remove the link with number *l* out of database by setting it to invalid
 Completely removal uses self.Tidy
@@ -388,7 +409,8 @@ Completely removal uses self.Tidy
         else:
             self.nodes[l.src].links.remove(l.id)
             self.nodes[l.dst].links.remove(l.id)
-            print('Link{%s} removed'%l.id)
+            print('Link{%s} %s removed'%(l.id,l))
+            self.blankId.append(l.id)
             l.id=0
             
     def Ren(self,oldname,newname=''):
@@ -396,7 +418,7 @@ Completely removal uses self.Tidy
 '''
         if oldname in self.nodes:
             if newname in self.nodes:
-                raise ValueError('New name already exists')
+                raise ValueError('New name already exists, aborted')
             #update attribute links
             for l in self.FindLinksByAttribute('^%s$'%oldname):
                 l.att=newname
@@ -424,7 +446,160 @@ Completely removal uses self.Tidy
 
         else:
             raise ValueError('According node does not exist')
+    def FindAllByContent(self,s, countLimit=None):
+        '''Return the entries whose app matches s in terms of re.search
+ignore case
+'''
+        p=re.compile(s,re.IGNORECASE)
+        result=[]
+        for n in self.nodes:
+            if re.search(p,self.nodes[n].app.ToString()):
+                if countLimit==None or len(result)<countLimit:
+                    result.append('Node{%s}'%n)
+                else:
+                    break
+        for i,l in enumerate(self.links):
+            if re.search(p,l.app.ToString()):
+                if countLimit==None or len(result)<countLimit:
+                    result.append('Link{%s}'%i)
+                else:
+                    break
+        return result
+
+    def Transfer(self,link,src,dst):
+        '''Transfer the designated link from src node to dst node
+link could be a number or an Link object
+'''
+        link=self.GetLink(link)
+        r=self.GetRelation(src,link.id)
+        if r=='src':
+            self.nodes[src].links.remove(link.id)
+            self.nodes[dst].links.append(link.id)
+            link.src=dst
+        elif r=='dst':
+            self.nodes[src].links.remove(link.id)
+            self.nodes[dst].links.append(link.id)
+            link.dst=dst
+        else:
+            raise ValueError('src should be a node name with given link')
+        return link
         
+    def ModAtt(self,linknum,att):
+        link=self.links[linknum]
+        if att!='' and att not in self.nodes:
+            raise KeyError('Att {%s} need to be in nodes.Keys'%att)
+        link.att=att
+        print(link)
+# Above are functions for modifying the mspace,
+# Below are the empowering functions for the mspace
+    def GetApp(self,x):
+        '''Get the attached alib for the input str or int
+if none is found, return None
+'''
+        try:
+            if isinstance(x,str):
+                return self.nodes[x].app
+            else:
+                return self.links[x].app
+        except Exception:
+            pass
+        return None
+
+    def f(self,x,path,lcl=locals(),obj=None):
+        '''
+        mspace.f(x,path,glbs=globals())
+        Construct a function object from the indicated content
+        
+        x is a node name or link number as in GetApp
+        path is a string directing to a node in the alib using alib.getValue
+        globals can be specified
+        returns a function object with only one argument args
+
+        Can associate objects to obj to have class functions
+        '''
+        app=self.GetApp(x)        
+        if not app:
+            raise KeyError('target {%s} not found'%x)
+        
+        code=app.getValue(path)
+        fn='f{%s} in App of {%s}'%(path,x)
+        ast=compile(code,filename=fn,mode='exec')
+        #assert(not lcl==None,'Locals should not be None.')
+        
+        def fApp(args):
+            loc=dict(lcl,args=args,app=app,obj=obj)
+                
+            try:
+                exec(ast,globals(),loc)
+            except Exception as e:
+                if 'message' in e.__dict__:
+                    e.message+='\nIn calling %s with (%s)'%(fn,args)
+                raise e
+            if 'ans' in loc:
+                #print(loc)
+                return loc['ans']
+            else:
+                return None
+        return fApp
+    
+    def imbue(self,s,loc=locals()):
+        '''Convert the input string to an object according to contents of mspace'''
+        #requires the #kobj attribute in the corresponding nodes
+        #the simplest case is eval, which is !: only valid for the first line
+        if s.startswith('!') and ':' in s:
+            ii=s.index(':')
+            name=s[1:ii]
+            if len(name)==0:
+                return eval(s[ii+1:])
+            elif name in self.nodes:
+                #app=self.GetApp(name)
+                try:
+                    return self.f(name,'#kobj|fromStr',loc)(s[ii+1:])
+                except KeyError as e:
+                    raise Exception('#kobj|fromStr not found in node {%s}'%name)
+        return s
+    
+    def debue(self,o,loc=locals()):
+        '''Convert the input object to a string according to contents of mspace'''
+        #just find the #kobj according to the class name
+        cname=type(o).__name__
+        if cname=='int' or cname=='float':
+            #convert some of the internal types
+            return '!:'+str(o)
+        elif cname in self.nodes:
+            app=self.GetApp(cname)
+            try:
+                return '!{}:'.format(cname)+self.f(cname,'#kobj|toStr',loc)(o)
+            except Exception as e:
+                print('#kobj|toStr function for class %s is not implemented'%cname)
+                raise e
+        else:
+            raise Exception('Node %s not found'%cname)
+    def inflate(self,al,loc=locals()):
+        ''' pump the alib up to make it alive'''
+        a2=alib(al.copy())
+        nexts=[a2] #try to scan leaf nodes
+        while len(nexts)>0:
+            a=nexts.pop()
+            for k in a:
+                if isinstance(a[k],alib):
+                    nexts.append(a[k])
+                else:
+                    a[k]=self.imbue(a[k],loc)
+        return a2
+    
+    def deflate(self,al,loc=locals()):
+        ''' turn the alib nodes back into strings, recursive'''
+        al=alib(al.copy())
+        nexts=[al] #try to scan leaf nodes
+        while len(nexts)>0:
+            a=nexts.pop()
+            for k in a:
+                if isinstance(a[k],alib):
+                    nexts.append(a[k])
+                elif not isinstance(a[k],str):
+                    a[k]=self.debue(a[k],loc)
+        return al
 
 #demo mode
 if __name__ == '__main__':

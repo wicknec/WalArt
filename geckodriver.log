@@ -1,0 +1,16 @@
+1521199982815	geckodriver	INFO	geckodriver 0.20.0 (0ac3698a74a7b1a742682b8e704f1f418df827ed 2018-03-13)
+1521199982859	geckodriver	INFO	Listening on 127.0.0.1:58032
+1521199985959	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.0BtX4nhNFz5L"
+1521199987018	Marionette	INFO	Enabled via --marionette
+1521199992244	Marionette	INFO	Listening on port 58041
+1521199992370	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1521200058019	geckodriver::marionette	ERROR	Failed to stop browser process
+1521395116893	geckodriver	INFO	geckodriver 0.20.0
+1521395116900	geckodriver	INFO	Listening on 127.0.0.1:36143
+1521395117906	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.AhuWpSNMsdOI"
+1521395118608	Marionette	INFO	Enabled via --marionette
+1521395119932	Marionette	INFO	Listening on port 36391
+1521395120026	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1521395171336	geckodriver::marionette	ERROR	Failed to stop browser process

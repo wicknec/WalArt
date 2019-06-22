@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 mspaceExp
 =======================
@@ -21,6 +20,17 @@ Revisions
 151226 *thisNode*, *thisLink*, *linkDoubleClicked*
 160105 add *mspaceExp.LoadNodes*
 160113 fixed nodeClicked
+160220 fixed nodeClicked for doubleClick, nodes view
+160227 fixed linkClicked
+161106 add #name attribute when exploring, in nodeClicked
+161201 add print time to btSaveClicked
+170117 add same time stamp in btSaveClicked
+180204 add FuncItemDropped for more versatile handling
+180207 fixed btSaveClicked to also record last save in comment
+180209
+180919 update #link when linkClicked
+181029 add try catch in btAddClicked to prevent exiting
+181212 run the onSave code in mspace for custom actions，such as adding computer name
 """
 # Form implementation generated from reading ui file 'mspaceExp.ui'
 #
@@ -28,7 +38,18 @@ Revisions
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt4 import QtCore, QtGui
+try:
+    from PyQt4 import QtCore
+    from PyQt4.QtCore import QTimer
+    from PyQt4.QtGui import QApplication, QWidget
+except ImportError or ModuleNotFoundError:
+    print('PyQt4 module not found, try using PyQt5')
+    from PyQt5 import QtCore
+    from PyQt5.QtWidgets import QApplication, QWidget
+    from PyQt5.QtCore import QTimer
+from WalArt.gui.QtGui4or5 import QtGuiFinder
+QtGui=QtGuiFinder()
+
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -43,7 +64,7 @@ try:
 except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
-    
+import time
 from WalArt import alibExp,waFile,mspace
 iconPath=waFile.GetFolderName(waFile.Find('add.png'))
 class mspaceList(QtGui.QListWidget):
@@ -195,7 +216,7 @@ class mspaceExp(object):
         self.btSave.setIcon(QtGui.QIcon(waFile.Join(iconPath,'save.png')))
 
         self.lwNode.dropEvent=self.itemDropped
-        
+        '''
         QtCore.QObject.connect(self.btSearch, QtCore.SIGNAL(_fromUtf8("clicked()")),
                                self.btSearchClicked)
         QtCore.QObject.connect(self.lineEdit, QtCore.SIGNAL(_fromUtf8("returnPressed()")),
@@ -210,14 +231,21 @@ class mspaceExp(object):
                                self.btAddClicked)
 
         QtCore.QObject.connect(self.lwLink, QtCore.SIGNAL(_fromUtf8("doubleClicked(QModelIndex)")),
-                               self.linkDoubleClicked)
+                               self.linkDoubleClicked)'''
+        self.btSearch.clicked.connect(self.btSearchClicked)
+        self.lineEdit.returnPressed.connect(self.btSearchClicked)
+        self.lwNode.clicked.connect(self.nodeClicked)
+        self.lwLink.clicked.connect(self.linkClicked)
+        self.btSave.clicked.connect(self.btSaveClicked)
+        self.btAdd.clicked.connect(self.btAddClicked)
+        self.lwLink.doubleClicked.connect(self.linkDoubleClicked)
     def retranslateUi(self, Form):
         Form.setWindowTitle(_translate("Form", "Form", None))
         self.groupBox.setTitle(_translate("Form", "mspaceExplorer", None))
         self.btSearch.setText(_translate("Form", "...", None))
         self.lwNode.setToolTip(_translate("Form", "Nodes", None))
         self.lwLink.setToolTip(_translate("Form", "Links", None))
-        self.lbMessage.setToolTip(_translate("Form", "meesage", None))
+        self.lbMessage.setToolTip(_translate("Form", "message from mspaceExp", None))
         self.lbMessage.setText(_translate("Form", "Drag msdx in Nodes box to explore", None))
 
 #========end of the generated part==============================
@@ -232,6 +260,9 @@ class mspaceExp(object):
     
     def Message(self,s):
         self.lbMessage.setText(s)
+    def FuncItemDropped(self,filename):
+        #a function that is called when a valid filename is dropped in the node box
+        self.LoadFile(filename)
         
     def itemDropped(self,event):
         #print('called')
@@ -243,18 +274,13 @@ class mspaceExp(object):
                 str(url.toLocalFile())
                 for url in event.mimeData().urls()
             ]
-            #print(str(event))
-            m=mspace.Load(filePaths[0])
-            self.filename=filePaths[0]
-            self.Load(m)
-            self.groupBox.setTitle(filePaths[0])
-            self.Message('file{%s} loaded'%filePaths[0])
-            self.m.Check()
-            #self.lineEdit.setText(filePaths[0])
-            #self.dropped.emit(filePaths)
-            self.btSearchClicked()
+            filename=filePaths[0]
+            self.FuncItemDropped(filename)
+            
         else:
+            self.Message('The thing {%s} you dropped is not recognized.'%event.mimeData())
             event.ignore()
+            
     def btSearchClicked(self):
         p=self.lineEdit.text()
         ns=self.m.FindNodesByName(p,100)
@@ -273,13 +299,24 @@ class mspaceExp(object):
             #item.setData(0,n)
         self.Message('%d nodes loaded'%len(nodes))
     def nodeClicked(self,index):
-        item=self.lwNode.itemFromIndex(index)
+        if self.dClicked==True:
+            self.dClicked=False
+            return
+        if isinstance(index, QtCore.QModelIndex):
+            item=self.lwNode.itemFromIndex(index)
+            tag=item.text()
+            n=self.m.nodes[tag]
+            self.Message(tag)
+        else:
+            item=index
+            n=index #reused for nodes view
         #help(item)
-        tag=item.text()
-        n=self.m.nodes[tag]
+            
+        if '#name' not in n.app or n.app['#name']!=n.tag:
+            n.app['#name']=n.tag
+            print('#name updated to {%s}'%tag)
+        
         self.alibUi.Load(n.app)
-
-        self.Message(tag)
         self.lwLink.clear()
         #help(self.lwLink)
         for l in n.links:
@@ -291,24 +328,52 @@ class mspaceExp(object):
         if self.dClicked==True:
             self.dClicked=False
             return
-        item=self.lwLink.itemFromIndex(index)
+        if isinstance(index, QtCore.QModelIndex):
+            item=self.lwLink.itemFromIndex(index)
+            num=item.data(-1)
+            l=self.m.links[num]
+        else:
+            l=index
         #num=item.text()
         #num=int(num[num.rfind('[')+1:-2])
-        num=item.data(-1)
-        l=self.m.links[num]
-        self.Message(l.Brief())
+        ml=l.Brief()
+        self.Message(ml)
+        if '#name' not in l.app or l.app['#name']!=l.id:
+            l.app['#name']=str(l.id)
+            print('#name updated to {%d}'%l.id)
+        if '#link' not in l.app or l.app['#link']!=ml:
+            l.app['#link']=ml
+            print('#link updated to {%s}'%ml)
+            
         self.alibUi.Load(l.app)
     def btSaveClicked(self):
         if self.filename!=None:
+            t=time.strftime('%Y-%m-%d %H:%M:%S',time.gmtime())
+            if 'mspace' in self.m.nodes:
+                app=self.m.GetApp('mspace')
+                app['#LastSaveGmt']=t
+                if '#kobj' in app and 'onSave' in app['#kobj']:
+                    #run the onSave code in mspace for custom actions
+                    #such as adding computer name
+                    self.m.f('mspace','#kobj|onSave',{'K':self.m})(None)
+            self.m.comment='[#LastSaveGmt|%s]'%t
+            
             mspace.Save(self.filename,self.m)
             self.m.Check()
+            print(t)
+            
             self.Message('file{%s} saved'%self.filename)
         else:
             self.Message('path{%s} is incorrect'%self.filename)
     def btAddClicked(self):
         name=self.lineEdit.text()
-        self.m.NewNode(name)
-        self.btSearchClicked()
+        try:
+            self.m.NewNode(name)
+            self.btSearchClicked()
+        except Exception as e:
+            import traceback
+            print('Something went wrong when adding a node:')
+            traceback.print_exc()
 
     def linkDoubleClicked(self,index):
         #this will also fire the itemClicked event

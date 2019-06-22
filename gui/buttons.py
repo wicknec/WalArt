@@ -13,9 +13,21 @@ Special buttons
 Revisions
 =================
 151209 btLock
+180102 migrate to be compatible with pyqt5
 """
-from PyQt4 import QtGui,QtCore
-from WalArt import waFile
+try:
+    from PyQt4 import QtCore
+    from PyQt4.QtCore import QTimer
+    from PyQt4.QtGui import QApplication, QWidget
+except ImportError or ModuleNotFoundError:
+    print('PyQt4 module not found, try using PyQt5')
+    from PyQt5 import QtCore
+    from PyQt5.QtWidgets import QApplication, QWidget
+    from PyQt5.QtCore import QTimer
+from WalArt.gui.QtGui4or5 import QtGuiFinder
+QtGui=QtGuiFinder()
+
+
 from WalArt import waFile
 iconPath=waFile.GetFolderName(waFile.Find('add.png'))
 class btLock(QtGui.QToolButton):

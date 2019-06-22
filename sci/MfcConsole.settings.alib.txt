@@ -1,0 +1,4 @@
+[MfcPort|COM5]
+            [MfcChannel|1][FullScaleCcm|50]
+            [DisplayLength|200]
+            [DefaultFlow|300][DefaultTime|10]

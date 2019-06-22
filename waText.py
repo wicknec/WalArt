@@ -20,6 +20,7 @@ Revisions
 151219 extended *Brief* for variable length
         add *atoi* ,*Escape*,*Unescape*
 160112 add type judge for Brief
+171207 fixed error reporting in brackets not paired
 """
 
 def List(obj):
@@ -74,7 +75,8 @@ raises ValueError if brackets in s are not paired
                         depth-=1
                 else:
                         if minr==-1:
-                                raise ValueError('brackets not paired in {'+s[cur:]+'}')
+                                #print('in reading {%s}'%s)
+                                raise ValueError('brackets not paired in {'+s[:cur]+'}')
                         cur=minl
                         minl=s.find(brackets[0],cur+1)
                         depth+=1
